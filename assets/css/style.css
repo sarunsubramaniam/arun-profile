@@ -48,7 +48,7 @@ body {
 }
 
 .info {
-    padding: 20px 0;
+    padding: 30px 0;
 }
 
 h1 {
@@ -68,4 +68,40 @@ ul.skill {
 
 ul.skill li {
     display: inline-block;
+    padding: 5px 10px;
+}
+
+.ps {
+    color: #2cc2f8;
+    border: 1px solid #2cc2f8;
+}
+
+.ai {
+    color: #f47900;
+    border: 1px solid #f47900;
+}
+
+.xd {
+    color: #f32abd;
+    border: 1px solid #f32abd;
+}
+
+.sketch {
+    color: #f5a800;
+    border: 1px solid #f5a800;
+}
+
+.html {
+    color: #eb6227;
+    border: 1px solid #eb6227;
+}
+
+.css {
+    color: #27a4da;
+    border: 1px solid #27a4da;
+}
+
+.js {
+    color: #ccbb43;
+    border: 1px solid #ccbb43;
 }
