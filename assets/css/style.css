@@ -12,7 +12,12 @@ body {
 }
 
 .logo {
-    padding: 20px;
+    padding: 20px 0;
+}
+
+.icon {
+    font-size: 24px;
+    padding-right: 0 !important;
 }
 
 .menu {
@@ -23,6 +28,11 @@ body {
 .menu ul li {
     display: inline-block;
     padding: 0 20px;
+}
+
+.menu ul li a {
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .designer img {
@@ -57,9 +67,24 @@ h1 {
     color: #222529;
 }
 
+.info h1 {
+    position: relative;
+}
+
+.info h1:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 80%;
+    background: #000;
+    height: 6px;
+    top: -10px;
+}
+
 .info p {
     font-size: 24px;
     font-weight: 300;
+    padding-top: 15px;
 }
 
 ul.skill {
@@ -73,35 +98,35 @@ ul.skill li {
 
 .ps {
     color: #2cc2f8;
-    border: 1px solid #2cc2f8;
+    border: 2px solid #2cc2f8;
 }
 
 .ai {
     color: #f47900;
-    border: 1px solid #f47900;
+    border: 2px solid #f47900;
 }
 
 .xd {
     color: #f32abd;
-    border: 1px solid #f32abd;
+    border: 2px solid #f32abd;
 }
 
 .sketch {
     color: #f5a800;
-    border: 1px solid #f5a800;
+    border: 2px solid #f5a800;
 }
 
 .html {
     color: #eb6227;
-    border: 1px solid #eb6227;
+    border: 2px solid #eb6227;
 }
 
 .css {
     color: #27a4da;
-    border: 1px solid #27a4da;
+    border: 2px solid #27a4da;
 }
 
 .js {
     color: #ccbb43;
-    border: 1px solid #ccbb43;
+    border: 2px solid #ccbb43;
 }
