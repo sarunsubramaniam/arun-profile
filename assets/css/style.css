@@ -35,17 +35,10 @@ body {
     text-decoration: none;
 }
 
-.designer img {
-    height: calc(100vh - 70px);
-    position: absolute;
-    right: -70px;
-    z-index: -1;
-}
-
 .developer img {
     height: calc(100vh - 70px);
     position: absolute;
-    right: -70px;
+    right: 0;
     z-index: -1;
 }
 
