@@ -1,3 +1,8 @@
+body {
+    font-family: 'Overpass Mono', monospace;
+    color: #657786;
+}
+
 .profile-header {
     background: #222529;
     color: #ffffff;
@@ -46,10 +51,21 @@
     padding: 20px 0;
 }
 
-.info h1 {
+h1 {
     font-size: 40px;
+    font-weight: 700;
+    color: #222529;
 }
 
 .info p {
     font-size: 24px;
+    font-weight: 300;
+}
+
+ul.skill {
+    padding-left: 0;
+}
+
+ul.skill li {
+    display: inline-block;
 }
