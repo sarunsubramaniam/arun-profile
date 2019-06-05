@@ -25,6 +25,10 @@ body {
     text-align: right;
 }
 
+.menu ul {
+    padding-left: 0;
+}
+
 .menu ul li {
     display: inline-block;
     padding: 0 20px;
@@ -123,4 +127,10 @@ ul.skill li {
 .js {
     color: #ccbb43;
     border: 2px solid #ccbb43;
+}
+
+@media only screen and (max-width: 768px) {
+    .menu {
+        text-align: center;
+    }
 }
