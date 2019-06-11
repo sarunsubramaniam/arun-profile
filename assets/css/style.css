@@ -47,10 +47,6 @@ body {
     z-index: -1;
 }
 
-.profile-picture {
-
-}
-
 .about-me {
     height: calc(100vh - 70px);
 }
