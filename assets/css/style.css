@@ -259,4 +259,7 @@ ul.skill li {
     .about-me {
         height: auto;
     }
+    .about-me:after {
+        display: none;
+    }
 }
