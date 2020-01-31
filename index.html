@@ -18,8 +18,8 @@
             </div>
             <div class="col-xs-5 col-md-10 menu">
                 <ul>
-<!--                    <li><a href="#">About me</a></li>-->
-<!--                    <li><a href="#">Portfolio</a></li>-->
+                   <li class="header-text"><span class="about-link">About me</span></li>
+                    <li class="header-text"><span class="portfolio-link">Portfolio</span></li>
                     <li class="icon"><a href="https://www.facebook.com/arunsm21" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
                     <li class="icon"><a href="https://www.linkedin.com/in/sarunsubramaniam/" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
                     <li class="icon"><a href="https://github.com/sarunsubramaniam" target="_blank"><i class="fa fa-github"></i></a></li>
@@ -28,7 +28,7 @@
         </div>
     </header>
     <div class="header-offset"></div>
-    <div class="container-fluid about-me">
+    <div id="about-me" class="container-fluid about-me">
         <div class="developer hidden-xs">
             <img class="img-responsive" src="assets/images/developer.jpg" alt="">
         </div>
@@ -64,7 +64,7 @@
             </div>
         </div>
     </div>
-   <div class="container-fluid portfolio-section">
+   <div id="portfolio" class="container-fluid portfolio-section">
        <div class="container">
            <div class="col-md-12">
                <div class="info">
@@ -335,6 +335,18 @@ $exitButton.click(function() {
   // Fade out the overlay
   $("#overlay").fadeOut("slow");
 });
+});
+
+$(".portfolio-link").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#portfolio").offset().top
+    }, 1000);
+});
+
+$(".about-link").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#about-me").offset().top
+    }, 1000);
 });
 </script>
 </html>
