@@ -168,6 +168,10 @@ ul.skill li {
     font-size: 36px;
 }
 
+.footer .logo img {
+    height: 70px;
+}
+
 #gallery {
     padding-top: 40px;
   }
