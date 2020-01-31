@@ -315,6 +315,6 @@ padding: 0;
         height: auto;
     }
     .header-text {
-        display: none;
+        display: none !important;
     }
 }
