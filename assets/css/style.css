@@ -259,4 +259,7 @@ ul.skill li {
     .header-offset {
         height: 180px;
     }
+    .about-me {
+        height: calc(100vh - 180px);
+    }
 }
