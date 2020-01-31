@@ -256,10 +256,4 @@ ul.skill li {
     .menu {
         text-align: center;
     }
-    .header-offset {
-        height: 180px;
-    }
-    .about-me {
-        height: calc(100vh - 180px);
-    }
 }
