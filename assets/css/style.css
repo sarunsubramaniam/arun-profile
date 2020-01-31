@@ -256,4 +256,7 @@ ul.skill li {
     .menu {
         text-align: center;
     }
+    .about-me {
+        height: auto;
+    }
 }
