@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    let portfolioItem = {logo: 9, sketch: 7, digital: 8, mockup: 3};
+    let portfolioItem = {logo: 19, sketch: 7, digital: 8, mockup: 3};
 
     Object.entries(portfolioItem).forEach(([key, value]) => {
         for(let i=1; i<=value; i++) {
