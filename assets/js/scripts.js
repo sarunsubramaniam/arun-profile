@@ -7,7 +7,7 @@ $(document).ready(function() {
                 <div class="img-wrapper">
                 <a href="assets/images/portfolio/${key}/img-${i}.png"><img src="assets/images/portfolio/${key}/img-${i}.png" class="img-responsive"></a>
                 <div class="img-overlay">
-                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                    <i class="fa fa-expand" aria-hidden="true"></i>
                 </div>
                 </div>
             </div>`);

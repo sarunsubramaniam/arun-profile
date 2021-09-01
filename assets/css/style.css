@@ -330,7 +330,7 @@ h1 {
 }
 
 .filter {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .filter span {
@@ -377,13 +377,10 @@ h1 {
   right: 0;
 }
 
-#image-gallery {
-  padding: 0;
-}
-
 .image {
   cursor: pointer;
-  margin-bottom: 15px;
+  padding: 0;
+  margin: 0;
   display: none;
 }
 
@@ -393,8 +390,6 @@ h1 {
 
 .image .img-wrapper {
   position: relative;
-  margin-top: 15px;
-  border: 1px solid rgba(101, 119, 134, 0.07);
   background-color: #fff;
 }
 
