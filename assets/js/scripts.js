@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    let portfolioItem = {logo: 16, sketch: 7, digital: 8, mockup: 3};
+    let portfolioItem = {logo: 16, sketch: 8, digital: 8, mockup: 3};
 
     Object.entries(portfolioItem).forEach(([key, value]) => {
         for(let i=1; i<=value; i++) {
@@ -7,7 +7,8 @@ $(document).ready(function() {
                 <div class="img-wrapper">
                 <a href="assets/images/portfolio/${key}/img-${i}.png"><img src="assets/images/portfolio/${key}/img-${i}.png" class="img-responsive"></a>
                 <div class="img-overlay">
-                    <i class="fa fa-expand" aria-hidden="true"></i>
+                  <i class="lni lni-magnifier"></i>
+                  <span>${key == 'logo'? 'Logo' : key == 'sketch' ? 'Sketch' : key == 'digital' ? 'Digital Art' : key == 'mockup' ? 'Prototype' : 'Micro Interaction'}</span>
                 </div>
                 </div>
             </div>`);
@@ -61,23 +62,12 @@ $(document).ready(function() {
         }, 1000)  
     });
 
-    
-
-    // Gallery image hover
-    $( ".img-wrapper" ).hover(
-      function() {
-        $(this).find(".img-overlay").animate({opacity: 1}, 600);
-      }, function() {
-        $(this).find(".img-overlay").animate({opacity: 0}, 600);
-      }
-    );
-
     // Lightbox
     var $overlay = $('<div id="overlay"></div>');
     var $image = $("<img>");
-    var $prevButton = $('<div id="prevButton"><i class="fa fa-chevron-left"></i></div>');
-    var $nextButton = $('<div id="nextButton"><i class="fa fa-chevron-right"></i></div>');
-    var $exitButton = $('<div id="exitButton"><i class="fa fa-times"></i></div>');
+    var $prevButton = $('<div id="prevButton"><i class="lni lni-chevron-left"></i></div>');
+    var $nextButton = $('<div id="nextButton"><i class="lni lni-chevron-right"></i></div>');
+    var $exitButton = $('<div id="exitButton"><i class="lni lni-close"></i></div>');
 
     // Add overlay
     $overlay.append($image).prepend($prevButton).append($nextButton).append($exitButton);
