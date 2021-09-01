@@ -3,7 +3,7 @@ $(document).ready(function() {
 
     Object.entries(portfolioItem).forEach(([key, value]) => {
         for(let i=1; i<=value; i++) {
-            $('#image-gallery').append(`<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 all ${key} image active">
+            $('#image-gallery').append(`<div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 all ${key} image active">
                 <div class="img-wrapper">
                 <a href="assets/images/portfolio/${key}/img-${i}.png"><img src="assets/images/portfolio/${key}/img-${i}.png" class="img-responsive"></a>
                 <div class="img-overlay">
@@ -22,6 +22,15 @@ $(document).ready(function() {
         $('#image-gallery').find('.' + currentList).addClass('active');
     });
 
+    $('.drawer-icon').click(function(){
+      $(this).parent('#bottom-drawer').toggleClass('active');
+    });
+
+    $('#bottom-drawer ul li').click(function(){
+      $('#bottom-drawer ul li').removeClass('active');
+      $(this).addClass('active');
+    })
+
     $(window).scroll(function() {
         var height = $(window).scrollTop();
         var currHeight = $(window).height() - 1;
@@ -29,10 +38,19 @@ $(document).ready(function() {
         if(height  > currHeight) {
             $('.menu .header-text').removeClass('active');
             $('.menu .header-text:nth-child(2)').addClass('active');
+
+            $('#bottom-drawer ul li').removeClass('active');
+            $('#bottom-drawer ul li:nth-child(2)').addClass('active');
+
+            $('.profile-header').css('background', 'rgba(255, 255, 255, 1)');
         }
         else {
             $('.menu .header-text').removeClass('active');
             $('.menu .header-text:nth-child(1)').addClass('active');
+
+            $('#bottom-drawer ul li').removeClass('active');
+            $('#bottom-drawer ul li:nth-child(1)').addClass('active');
+            $('.profile-header').css('background', 'rgba(255, 255, 255, 0.75)');
         }
     });
 

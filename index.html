@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
     <link href="https://fonts.googleapis.com/css?family=Overpass+Mono:300,400,600,700&display=swap" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css"> 
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -18,7 +19,7 @@
             </div>
             <div class="col-xs-5 col-md-10 menu">
                 <ul>
-                   <li class="header-text active"><span class="scroller" data-scroll="about-me">About me</span></li>
+                   <li class="header-text active"><span class="scroller" data-scroll="about-me">About Me</span></li>
                     <li class="header-text"><span class="scroller" data-scroll="portfolio">Portfolio</span></li>
                     <li class="icon"><a href="https://www.facebook.com/arunsm21" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
                     <li class="icon"><a href="https://www.linkedin.com/in/sarunsubramaniam/" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
@@ -27,6 +28,13 @@
             </div>
         </div>
     </header>
+    <div id="bottom-drawer" class="visible-xs">
+        <span class="drawer-icon"><i class="lni lni-chevron-up"></i></span>
+        <ul>
+            <li class="active"><span class="scroller" data-scroll="about-me">About Me</span></li>
+            <li class=""><span class="scroller" data-scroll="portfolio">Portfolio</span></li>
+        </ul>
+    </div>
     <div id="about-me" class="container-fluid about-me">
         <div class="developer hidden-xs">
         </div>
@@ -81,8 +89,10 @@
               </div>
              </div>
            </div>
-           <div class="row">
-            <div class="col-lg-12 filter">
+       </div>
+       <div id="filter" class="container-fluid filter">
+        <div class="row text-center">
+            <div class="col-lg-12">
                 <span data-item="all" class="active">All</span>
                 <span data-item="logo">Logo</span>
                 <span data-item="sketch">Sketch</span>
@@ -113,9 +123,9 @@
                     <li class="icon"><a href="https://www.linkedin.com/in/sarunsubramaniam/" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
                     <li class="icon"><a href="https://github.com/sarunsubramaniam" target="_blank"><i class="fa fa-github"></i></a></li>
                 </ul>
-                <div class="logo">
+                <!-- <div class="logo">
                     <img class="" src="assets/images/logo-dark.png" alt="">
-                </div>
+                </div> -->
                </div>
            </div>
        </div>
