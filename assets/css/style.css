@@ -329,6 +329,10 @@ h1 {
   padding: 0;
 }
 
+#image-gallery {
+  padding: 0;
+}
+
 .filter {
   margin-bottom: 30px;
 }
@@ -520,8 +524,12 @@ h1 {
   .menu {
     text-align: center;
   }
-  .about-me {
-    height: auto;
+  .filter {
+    margin-bottom: 0;
+  }
+  .filter span {
+    margin-bottom: 15px;
+    display: inline-block;
   }
   .about-me::before {
     content: '';
@@ -530,7 +538,7 @@ h1 {
     right: 0;
     top: 0;
     bottom: 0;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.65);
     display: block;
     z-index: 0;
   }
