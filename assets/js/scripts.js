@@ -74,7 +74,7 @@ $(document).ready(function() {
     $("#gallery").append($overlay);
 
     // Hide overlay on default
-    $overlay.hide();
+    $overlay.removeClass('active');
 
     // When an image is clicked
     $(".img-overlay").click(function(event) {
@@ -85,13 +85,13 @@ $(document).ready(function() {
       // Add the image src to $image
       $image.attr("src", imageLocation);
       // Fade in the overlay
-      $overlay.fadeIn("slow");
+      $overlay.addClass("active");
     });
 
     // When the overlay is clicked
     $overlay.click(function() {
       // Fade out the overlay
-      $(this).fadeOut("slow");
+      $(this).removeClass("active");
     });
 
     // When next button is clicked
@@ -137,7 +137,7 @@ $(document).ready(function() {
     // When the exit button is clicked
     $exitButton.click(function() {
       // Fade out the overlay
-      $("#overlay").fadeOut("slow");
+      $("#overlay").removeClass("active");
     });
 
     $(".scroller").click(function() {
