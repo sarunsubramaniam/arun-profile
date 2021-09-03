@@ -1,18 +1,215 @@
 $(document).ready(function() {
-    let portfolioItem = {logo: 16, sketch: 8, digital: 8, mockup: 3};
+    let portfolioItem = [
+      {
+        "image": "protectt",
+        "cls": "logo",
+        "title": "Protectt.ai",
+        "category": "Logo",
+      },
+      {
+        "image": "dividend",
+        "cls": "logo",
+        "title": "Dividend",
+        "category": "Logo",
+      },
+      {
+        "image": "shopr",
+        "cls": "logo",
+        "title": "CoShopr",
+        "category": "Logo",
+      },
+      {
+        "image": "taliaferro",
+        "cls": "logo",
+        "title": "Taliaferro",
+        "category": "Logo",
+      },
+      {
+        "image": "arithmetic-lab",
+        "cls": "logo",
+        "title": "Arithmetic Lab",
+        "category": "Logo",
+      },
+      {
+        "image": "lead-faucet",
+        "cls": "logo",
+        "title": "Lead Faucet",
+        "category": "Logo",
+      },
+      {
+        "image": "two-doors-down",
+        "cls": "logo",
+        "title": "Two Doors Down",
+        "category": "Logo",
+      },
+      {
+        "image": "social-wallet",
+        "cls": "logo",
+        "title": "Social Wallet",
+        "category": "Logo",
+      },
+      {
+        "image": "all-natural-life",
+        "cls": "logo",
+        "title": "All Natural Wallet",
+        "category": "Logo",
+      },
+      {
+        "image": "wolf-head",
+        "cls": "logo",
+        "title": "Wolf Head",
+        "category": "Logo",
+      },
+      {
+        "image": "solvent",
+        "cls": "logo",
+        "title": "Solvent",
+        "category": "Logo",
+      },
+      {
+        "image": "daveys",
+        "cls": "logo",
+        "title": "Daveys",
+        "category": "Logo",
+      },
+      {
+        "image": "cantaarte",
+        "cls": "logo",
+        "title": "Cantaarte",
+        "category": "Logo",
+      },
+      {
+        "image": "payn",
+        "cls": "logo",
+        "title": "PAYN",
+        "category": "Logo",
+      },
+      {
+        "image": "spiralverse",
+        "cls": "logo",
+        "title": "Spiral Verse",
+        "category": "Logo",
+      },
+      {
+        "image": "meerea",
+        "cls": "logo",
+        "title": "Meerea",
+        "category": "Logo",
+      },
+      {
+        "image": "digital-art-jobs",
+        "cls": "digital",
+        "title": "Steve Jobs",
+        "category": "Digital Art",
+      },
+      {
+        "image": "scribble-art-dhanush",
+        "cls": "digital",
+        "title": "Dhanush",
+        "category": "Digital Art",
+      },
+      {
+        "image": "digital-art-nikhil",
+        "cls": "digital",
+        "title": "Kids' Digital Painting",
+        "category": "Digital Art",
+      },
+      {
+        "image": "digital-art-kingfisher",
+        "cls": "digital",
+        "title": "Kingfisher",
+        "category": "Digital Art",
+      },
+      {
+        "image": "digital-art-landscape",
+        "cls": "digital",
+        "title": "Landscape",
+        "category": "Digital Art",
+      },
+      {
+        "image": "poly-art-lionking",
+        "cls": "digital",
+        "title": "Lion King Poly Art",
+        "category": "Digital Art",
+      },
+      {
+        "image": "charlie-chaplin",
+        "cls": "sketch",
+        "title": "Charlie Chaplin",
+        "category": "Sketch",
+      },
+      {
+        "image": "sachin",
+        "cls": "sketch",
+        "title": "Sachin Tendulkar",
+        "category": "Sketch",
+      },
+      {
+        "image": "nikhilesh",
+        "cls": "sketch",
+        "title": "Kids' Portrait",
+        "category": "Sketch",
+      },
+      {
+        "image": "rishanth",
+        "cls": "sketch",
+        "title": "Kids' Portrait",
+        "category": "Sketch",
+      },
+      {
+        "image": "kid-1",
+        "cls": "sketch",
+        "title": "Kids' Portrait",
+        "category": "Sketch",
+      },
+      {
+        "image": "rajinikanth",
+        "cls": "sketch",
+        "title": "Rajinikanth",
+        "category": "Sketch",
+      },
+      {
+        "image": "kohli",
+        "cls": "sketch",
+        "title": "Virat Kohli",
+        "category": "Sketch",
+      },
+      {
+        "image": "sketch-steve-jobs",
+        "cls": "sketch",
+        "title": "Steve Jobs",
+        "category": "Sketch",
+      },
+      {
+        "image": "socially",
+        "cls": "prototype",
+        "title": "Socially",
+        "category": "Prototype",
+      },
+      {
+        "image": "socially-login",
+        "cls": "prototype",
+        "title": "Socially",
+        "category": "Prototype",
+      },
+      {
+        "image": "messenger",
+        "cls": "prototype",
+        "title": "Messenger",
+        "category": "Prototype",
+      }
+    ];
 
     Object.entries(portfolioItem).forEach(([key, value]) => {
-        for(let i=1; i<=value; i++) {
-            $('#image-gallery').append(`<div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 all ${key} image active">
-                <div class="img-wrapper">
-                <a href="assets/images/portfolio/${key}/img-${i}.png"><img src="assets/images/portfolio/${key}/img-${i}.png" class="img-responsive"></a>
-                <div class="img-overlay">
-                  <i class="lni lni-magnifier"></i>
-                  <span>${key == 'logo'? 'Logo' : key == 'sketch' ? 'Sketch' : key == 'digital' ? 'Digital Art' : key == 'mockup' ? 'Prototype' : 'Micro Interaction'}</span>
-                </div>
-                </div>
-            </div>`);
-        }
+      $('#image-gallery .row').append(`<div class="all ${value.cls} image active">
+          <div class="img-wrapper">
+          <a href="assets/images/portfolio/${value.image}.png"><img src="assets/images/portfolio/${value.image}.png" class="img-responsive"></a>
+          <div class="img-overlay">
+            <span>${value.title}</span>
+            <h5>${value.category}</h5>
+          </div>
+          </div>
+      </div>`);
     });
 
     $('.filter span').click(function(){
