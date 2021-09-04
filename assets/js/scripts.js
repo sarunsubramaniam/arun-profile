@@ -1,9 +1,10 @@
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  $('#preloader').fadeOut(800);
+}, false);
+
 $(document).ready(function () {
-
-
-  $(window).on('load', function(){
-    $('#preloader').fadeOut();
-  });
 
   function shuffle(array) {
     var currentIndex = array.length,
