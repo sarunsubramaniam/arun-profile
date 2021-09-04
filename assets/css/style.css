@@ -5,6 +5,31 @@ body {
 
 /* Mixins */
 /* Styles */
+#preloader {
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: rgba(255, 255, 255, 0.95);
+  -webkit-transition-duration: 0.35s;
+          transition-duration: 0.35s;
+}
+
+#preloader img {
+  width: 300px;
+}
+
 .profile-header {
   position: fixed;
   left: 0;
@@ -22,8 +47,16 @@ body {
 }
 
 .profile-header .logo img {
-  -webkit-transform: scale(0.75);
-          transform: scale(0.75);
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.35s;
+          transition-duration: 0.35s;
+  cursor: pointer;
+  width: 200px;
+}
+
+.profile-header .logo img:hover {
+  opacity: 0.8s5;
 }
 
 .profile-header .menu {
@@ -442,7 +475,7 @@ h1 {
   cursor: pointer;
   font-size: 14px;
   text-transform: uppercase;
-  padding: 5px  15px;
+  padding: 5px 15px;
   opacity: 0.65;
   -webkit-transition-property: all;
   transition-property: all;

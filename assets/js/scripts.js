@@ -1,5 +1,10 @@
 $(document).ready(function () {
 
+
+  $(window).on('load', function(){
+    $('#preloader').fadeOut();
+  });
+
   function shuffle(array) {
     var currentIndex = array.length,
       randomIndex;
@@ -98,13 +103,13 @@ $(document).ready(function () {
         $("#overlay .title").text($nextImgInfo.attr('data-title'));
         $("#overlay .category").text($nextImgInfo.attr('data-category'));
         $("#overlay .tools").text($nextImgInfo.attr('data-tools'));
-        
+
       } else {
-        // Otherwise fade in the first image      
+        // Otherwise fade in the first image
         $("#overlay img").attr("src", $($images[0]).attr("src")).fadeIn(800);
         $("#overlay .title").text($($images[0]).parent('a').attr('data-title'));
         $("#overlay .category").text($($images[0]).parent('a').attr('data-category'));
-        $("#overlay .tools").text($($images[0]).parent('a').attr('data-tools'));    
+        $("#overlay .tools").text($($images[0]).parent('a').attr('data-tools'));
       }
       // Prevents overlay from being hidden
       event.stopPropagation();
@@ -137,6 +142,11 @@ $(document).ready(function () {
     });
 
   });
+
+  $('.profile-header .logo img').on('mouseover', function(){
+    $(this).attr('src', 'assets/images/logo_hover.png');
+  })
+
 
   $('.filter span').click(function () {
     let currentList = $(this).attr('data-item');

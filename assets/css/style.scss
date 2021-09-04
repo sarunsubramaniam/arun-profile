@@ -15,6 +15,7 @@ body {
             color: #222529;
             position: relative;
             display: inline-block;
+
             span {
                 // display: block;
                 font-weight: 700;
@@ -64,6 +65,24 @@ body {
 
 /* Styles */
 
+#preloader {
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.95);
+    transition-duration: 0.35s;
+
+    img {
+        width: 300px;
+    }
+}
+
 .profile-header {
     position: fixed;
     left: 0;
@@ -74,10 +93,18 @@ body {
     height: 75px;
     color: #222529;
     z-index: 1;
+
     // box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     .logo {
         img {
-            transform: scale(0.75);
+            transition-property: all;
+            transition-duration: 0.35s;
+            cursor: pointer;
+            width: 200px;
+
+            &:hover {
+                opacity: 0.8s5;
+            }
         }
     }
 
@@ -101,6 +128,7 @@ body {
                     position: relative;
                     color: #657786;
                     text-transform: uppercase;
+
                     &:after {
                         content: '';
                         position: absolute;
@@ -116,8 +144,10 @@ body {
                         transition-duration: 0.35s;
                         transform-origin: center;
                     }
+
                     &.active {
                         color: #222529;
+
                         &:after {
                             width: 5px;
                             height: 5px;
@@ -163,14 +193,17 @@ body {
     transition-property: all;
     transition-duration: 0.35s;
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+
     &.active {
         transform: translateY(0);
+
         .drawer-icon {
             i {
                 transform: translateY(0) rotate(180deg);
             }
         }
     }
+
     .drawer-icon {
         cursor: pointer;
         position: absolute;
@@ -182,25 +215,31 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
+
         i {
             color: #fff;
             font-weight: bold;
             transform: translateY(-10px);
         }
     }
+
     ul {
         padding-left: 0;
+
         li {
             cursor: pointer;
             padding: 10px 0;
             list-style: none;
+
             &:not(:first-child) {
                 padding-bottom: 0;
             }
+
             span {
                 transition-property: all;
                 transition-duration: 0.35s;
             }
+
             &.active {
                 span {
                     color: #222529;
@@ -231,6 +270,7 @@ h1 {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right bottom;
+
     &::before {
         content: '';
         position: absolute;
@@ -276,18 +316,21 @@ h1 {
     align-items: center;
     background: #fafafa;
     z-index: 1;
+
     span {
         cursor: pointer;
         font-size: 14px;
         text-transform: uppercase;
-        padding: 5px  15px;
+        padding: 5px 15px;
         opacity: 0.65;
         transition-property: all;
         transition-duration: 0.35s;
         position: relative;
+
         &:hover {
             opacity: 1;
         }
+
         &:before {
             content: '';
             position: absolute;
@@ -301,9 +344,11 @@ h1 {
             transition-duration: 0.35s;
             transform-origin: center;
         }
+
         &.active {
             color: #222529;
             opacity: 1;
+
             &:before {
                 left: 0;
                 right: 0;
@@ -318,13 +363,15 @@ h1 {
     .container {
         padding: 0;
     }
+
     #image-gallery {
         padding: 0;
         overflow: hidden;
+
         .row {
             display: flex;
             flex-flow: row wrap;
-    
+
             .image {
                 cursor: pointer;
                 padding: 0;
@@ -336,21 +383,22 @@ h1 {
                 transform-origin: center;
                 opacity: 0;
                 transform: scale(0);
-    
+
                 &.active {
                     flex-basis: 100%;
                     max-width: 100%;
                     transform: scale(1);
                     opacity: 1;
                 }
-            
+
                 .img-wrapper {
                     position: relative;
                     background-color: #fff;
+
                     img {
                         width: 100%;
                     }
-            
+
                     .img-overlay {
                         background: rgba(0, 0, 0, 0.7);
                         width: 100%;
@@ -372,12 +420,13 @@ h1 {
                         transition-property: all;
                         transition-duration: 0.35s;
                         transform-origin: top;
-            
+
                         span {
                             font-size: 18px;
                             position: relative;
                             margin-bottom: 15px;
                             text-align: center;
+
                             &:after {
                                 content: '';
                                 position: absolute;
@@ -390,12 +439,13 @@ h1 {
                                 margin: 0 auto;
                             }
                         }
-                    
+
                         i {
                             color: #fff;
                             font-size: 2em;
                         }
                     }
+
                     &:hover {
                         .img-overlay {
                             opacity: 1;
@@ -458,6 +508,7 @@ h1 {
     transition-property: all;
     transition-duration: 0.35s;
     transform-origin: top;
+
     &.active {
         visibility: visible;
         transform: translateY(0);
@@ -493,38 +544,39 @@ h1 {
             padding: 5%;
         }
     }
+
     #nextButton {
         cursor: pointer;
         color: #fff;
         font-size: 1.5em;
         -webkit-transition: opacity 0.8s;
         transition: opacity 0.8s;
-    
+
         position: absolute;
         bottom: 20px;
         right: 20px;
-    
+
         &:hover {
             opacity: 0.7;
         }
     }
-    
+
     #prevButton {
         cursor: pointer;
         color: #fff;
         font-size: 1.5em;
         -webkit-transition: opacity 0.8s;
         transition: opacity 0.8s;
-    
+
         position: absolute;
         bottom: 20px;
         right: 50px;
-    
+
         &:hover {
             opacity: 0.7;
         }
     }
-    
+
     #exitButton {
         cursor: pointer;
         color: #fff;
@@ -534,7 +586,7 @@ h1 {
         position: absolute;
         top: 20px;
         right: 20px;
-    
+
         &:hover {
             opacity: 0.7;
         }
@@ -550,10 +602,12 @@ h1 {
             justify-content: center;
             height: 75px;
             padding: 0;
+
             img {
                 transform: scale(1);
             }
         }
+
         .menu {
             display: flex;
         }
@@ -562,7 +616,7 @@ h1 {
     #bottom-drawer {
         display: none;
     }
-     
+
     .about-me {
         &:before {
             display: none;
@@ -573,27 +627,32 @@ h1 {
         display: flex;
     }
 
-    
+
 
     h1 {
         font-size: 40px;
     }
+
     .portfolio-section {
         padding: 45px 0 0;
     }
+
     #overlay {
         img {
             &.listItem {
                 width: 40%;
-            } 
+            }
         }
+
         .logo {
             left: 20px;
             top: 15px;
         }
     }
+
     #gallery {
         padding: 0;
+
         #image-gallery {
             .row {
                 .image {
@@ -605,6 +664,7 @@ h1 {
             }
         }
     }
+
     .footer {
         a {
             font-size: 20px;
@@ -626,5 +686,5 @@ h1 {
             }
         }
     }
-   
+
 }
