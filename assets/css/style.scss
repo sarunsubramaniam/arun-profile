@@ -11,19 +11,23 @@ body {
 
         h1 {
             font-size: 40px;
-            font-weight: 700;
+            font-weight: 400;
             color: #222529;
             position: relative;
             display: inline-block;
+            span {
+                // display: block;
+                font-weight: 700;
+            }
 
             &:after {
                 content: "";
                 position: absolute;
                 left: 0;
-                right: 65%;
+                width: 50px;
                 background: #222529;
-                height: 6px;
-                top: -10px;
+                height: 4px;
+                bottom: -10px;
             }
         }
 
@@ -58,25 +62,34 @@ body {
     }
 }
 
+/* Styles */
+
 .profile-header {
     position: fixed;
     left: 0;
     right: 0;
     background: rgba(255, 255, 255, 0.75);
+    display: flex;
+    align-items: center;
+    height: 75px;
     color: #222529;
     z-index: 1;
-
+    // box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     .logo {
-        padding: 20px 0;
+        img {
+            transform: scale(0.75);
+        }
     }
 
     .menu {
-        padding: 20px 0;
-        text-align: right;
+        display: none;
 
         ul {
-            padding-left: 0;
+            margin-left: auto;
             margin-bottom: 0;
+            display: flex;
+            align-items: center;
+            height: 75px;
 
             li {
                 display: inline-block;
@@ -87,6 +100,7 @@ body {
                 &.header-text {
                     position: relative;
                     color: #657786;
+                    text-transform: uppercase;
                     &:after {
                         content: '';
                         position: absolute;
@@ -133,8 +147,72 @@ body {
     height: 78px;
 }
 
+#bottom-drawer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px 0;
+    background-color: #fff;
+    z-index: 1;
+    transform: translateY(100%);
+    transition-property: all;
+    transition-duration: 0.35s;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+    &.active {
+        transform: translateY(0);
+        .drawer-icon {
+            i {
+                transform: translateY(0) rotate(180deg);
+            }
+        }
+    }
+    .drawer-icon {
+        cursor: pointer;
+        position: absolute;
+        top: -24px;
+        background: #222529;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        i {
+            color: #fff;
+            font-weight: bold;
+            transform: translateY(-10px);
+        }
+    }
+    ul {
+        padding-left: 0;
+        li {
+            cursor: pointer;
+            padding: 10px 0;
+            list-style: none;
+            &:not(:first-child) {
+                padding-bottom: 0;
+            }
+            span {
+                transition-property: all;
+                transition-duration: 0.35s;
+            }
+            &.active {
+                span {
+                    color: #222529;
+                    font-weight: bold;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
 h1 {
-    font-size: 40px;
     font-weight: 700;
     color: #222529;
 }
@@ -153,6 +231,17 @@ h1 {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right bottom;
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: rgba(255, 255, 255, 0.65);
+        display: block;
+        z-index: 0;
+    }
 
     .developer {
         img {
@@ -168,7 +257,7 @@ h1 {
 }
 
 .portfolio-section {
-    padding: 45px 0 0;
+    padding: 45px 15px 0;
     background: #fafafa;
 
     h1 {
@@ -178,135 +267,11 @@ h1 {
     @include info
 }
 
-.footer {
-    padding: 65px 0;
-
-    .logo {
-        img {
-            height: 70px;
-        }
-    }
-
-    a {
-        font-size: 20px;
-    }
-
-    ul {
-        padding-left: 0;
-
-        li {
-            display: inline-block;
-            padding: 15px !important;
-
-            i {
-                font-size: 36px;
-            }
-        }
-    }
-}
-
-#gallery {
-    padding-top: 40px;
-
-    .container {
-        padding: 0;
-    }
-}
-
-#image-gallery {
-    padding: 0;
-    overflow: hidden;
-    .row {
-        display: flex;
-        flex-flow: row wrap;
-
-        .image {
-            cursor: pointer;
-            padding: 0;
-            margin: 0;
-            flex-basis: 0;
-            transition-property: all;
-            transition-duration: 0.5s;
-            transform-origin: top;
-            transition-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
-            opacity: 0;
-            visibility: hidden;
-
-            &.active {
-                flex-basis: 16.667%;
-                visibility: visible;
-                opacity: 1;
-            }
-        
-            .img-wrapper {
-                position: relative;
-                background-color: #fff;
-                img {
-                    width: 100%;
-                }
-        
-                .img-overlay {
-                    background: rgba(0, 0, 0, 0.7);
-                    width: 100%;
-                    height: 0;
-                    position: absolute;
-                    left: 0;
-                    bottom: 0;
-                    right: 0;
-                    padding: 10px;
-                    display: -webkit-box;
-                    display: flex;
-                    -webkit-box-pack: center;
-                    justify-content: center;
-                    -webkit-box-align: center;
-                    align-items: center;
-                    flex-direction: column;
-                    color: #ffff;
-                    opacity: 0;
-                    transition-property: all;
-                    transition-duration: 0.35s;
-                    transform-origin: top;
-        
-                    span {
-                        font-size: 18px;
-                        position: relative;
-                        margin-bottom: 15px;
-                        text-align: center;
-                        &:after {
-                            content: '';
-                            position: absolute;
-                            height: 1px;
-                            width: 30px;
-                            background: #fff;
-                            bottom: -10px;
-                            left: 0;
-                            right: 0;
-                            margin: 0 auto;
-                        }
-                    }
-                
-                    i {
-                        color: #fff;
-                        font-size: 2em;
-                    }
-                }
-                &:hover {
-                    .img-overlay {
-                        opacity: 1;
-                        height: 100%;
-                    }
-                }
-            }
-        }
-    }
-}
-
 .filter {
-    // margin-bottom: 30px;
     position: sticky;
     top: 75px;
     min-height: 60px;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     background: #fafafa;
@@ -347,6 +312,128 @@ h1 {
     }
 }
 
+#gallery {
+    padding-top: 40px;
+
+    .container {
+        padding: 0;
+    }
+    #image-gallery {
+        padding: 0;
+        overflow: hidden;
+        .row {
+            display: flex;
+            flex-flow: row wrap;
+    
+            .image {
+                cursor: pointer;
+                padding: 0;
+                margin: 0;
+                flex-basis: 0;
+                max-width: 0;
+                transition-property: transform, opacity;
+                transition-duration: 0.25s;
+                transform-origin: center;
+                opacity: 0;
+                transform: scale(0);
+    
+                &.active {
+                    flex-basis: 100%;
+                    max-width: 100%;
+                    transform: scale(1);
+                    opacity: 1;
+                }
+            
+                .img-wrapper {
+                    position: relative;
+                    background-color: #fff;
+                    img {
+                        width: 100%;
+                    }
+            
+                    .img-overlay {
+                        background: rgba(0, 0, 0, 0.7);
+                        width: 100%;
+                        height: 0;
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        right: 0;
+                        padding: 10px;
+                        display: -webkit-box;
+                        display: flex;
+                        -webkit-box-pack: center;
+                        justify-content: center;
+                        -webkit-box-align: center;
+                        align-items: center;
+                        flex-direction: column;
+                        color: #ffff;
+                        opacity: 0;
+                        transition-property: all;
+                        transition-duration: 0.35s;
+                        transform-origin: top;
+            
+                        span {
+                            font-size: 18px;
+                            position: relative;
+                            margin-bottom: 15px;
+                            text-align: center;
+                            &:after {
+                                content: '';
+                                position: absolute;
+                                height: 1px;
+                                width: 30px;
+                                background: #fff;
+                                bottom: -10px;
+                                left: 0;
+                                right: 0;
+                                margin: 0 auto;
+                            }
+                        }
+                    
+                        i {
+                            color: #fff;
+                            font-size: 2em;
+                        }
+                    }
+                    &:hover {
+                        .img-overlay {
+                            opacity: 1;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    padding: 65px 0;
+
+    .logo {
+        img {
+            height: 70px;
+        }
+    }
+
+    a {
+        font-size: 18px;
+    }
+
+    ul {
+        padding-left: 0;
+
+        li {
+            display: inline-block;
+            padding: 15px !important;
+
+            i {
+                font-size: 36px;
+            }
+        }
+    }
+}
 
 #overlay {
     background: rgb(43, 43, 43);
@@ -376,217 +463,168 @@ h1 {
         transform: translateY(0);
     }
 
-    img {
-        margin: 0;
-        width: 80%;
-        height: auto;
-        -o-object-fit: contain;
-        object-fit: contain;
-        padding: 5%;
-    }
-}
-
-#nextButton {
-    cursor: pointer;
-    color: #fff;
-    font-size: 1.5em;
-    -webkit-transition: opacity 0.8s;
-    transition: opacity 0.8s;
-
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-
-    &:hover {
-        opacity: 0.7;
-    }
-}
-
-#prevButton {
-    cursor: pointer;
-    color: #fff;
-    font-size: 1.5em;
-    -webkit-transition: opacity 0.8s;
-    transition: opacity 0.8s;
-
-    position: absolute;
-    bottom: 20px;
-    right: 50px;
-
-    &:hover {
-        opacity: 0.7;
-    }
-}
-
-#exitButton {
-    cursor: pointer;
-    color: #fff;
-    font-size: 1.5em;
-    -webkit-transition: opacity 0.8s;
-    transition: opacity 0.8s;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-
-    &:hover {
-        opacity: 0.7;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    #overlay {
-        img {
-            width: 40%;
-        }
-    }
-}
-
-@media screen and (min-width: 991px) {
-    #gallery {
+    .logo {
+        position: absolute;
+        left: 15px;
+        top: 15px;
         padding: 0;
+        background: url('../images/logo.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 200px;
+        height: 42px;
+    }
+
+    .project-info {
+        position: absolute;
+        left: 20px;
+        bottom: 15px;
+        color: #fff;
+        width: 70%;
+    }
+
+    img {
+        &.listItem {
+            margin: 0;
+            width: 80%;
+            height: auto;
+            -o-object-fit: contain;
+            object-fit: contain;
+            padding: 5%;
+        }
+    }
+    #nextButton {
+        cursor: pointer;
+        color: #fff;
+        font-size: 1.5em;
+        -webkit-transition: opacity 0.8s;
+        transition: opacity 0.8s;
+    
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+    
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+    
+    #prevButton {
+        cursor: pointer;
+        color: #fff;
+        font-size: 1.5em;
+        -webkit-transition: opacity 0.8s;
+        transition: opacity 0.8s;
+    
+        position: absolute;
+        bottom: 20px;
+        right: 50px;
+    
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+    
+    #exitButton {
+        cursor: pointer;
+        color: #fff;
+        font-size: 1.5em;
+        -webkit-transition: opacity 0.8s;
+        transition: opacity 0.8s;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    
+        &:hover {
+            opacity: 0.7;
+        }
     }
 }
 
-@media only screen and (max-width: 768px) {
-    .menu {
-        text-align: center;
-    }
-
-    #image-gallery {
-        .row {
-            .image {
-                &.active {
-                    flex-basis: 50%;
-                    max-width: 50%;
-                }
-            }
-        }
-    }
+@media screen and (min-width: 992px) {
 
     .profile-header {
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
         .logo {
-            height: 85px;
-        }
-        .menu {
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 85px;
-            ul {
-                margin-left: auto;
-                li {
-                    padding: 0 10px;
-                }
+            height: 75px;
+            padding: 0;
+            img {
+                transform: scale(1);
             }
+        }
+        .menu {
+            display: flex;
         }
     }
 
     #bottom-drawer {
-        position: fixed;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        display: flex !important;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding: 30px 0;
-        background-color: #fff;
-        z-index: 1;
-        transform: translateY(100%);
-        transition-property: all;
-        transition-duration: 0.35s;
-        box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
-        &.active {
-            transform: translateY(0);
-            .drawer-icon {
-                i {
-                    transform: translateY(0) rotate(180deg);
-                }
-            }
+        display: none;
+    }
+     
+    .about-me {
+        &:before {
+            display: none;
         }
-        .drawer-icon {
-            cursor: pointer;
-            position: absolute;
-            top: -24px;
-            background: #222529;
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            i {
-                color: #fff;
-                font-weight: bold;
-                transform: translateY(-10px);
-            }
+    }
+
+    .filter {
+        display: flex;
+    }
+
+    
+
+    h1 {
+        font-size: 40px;
+    }
+    .portfolio-section {
+        padding: 45px 0 0;
+    }
+    #overlay {
+        img {
+            &.listItem {
+                width: 40%;
+            } 
         }
-        ul {
-            padding-left: 0;
-            li {
-                cursor: pointer;
-                padding: 10px 0;
-                list-style: none;
-                &:not(:first-child) {
-                    padding-bottom: 0;
-                }
-                span {
-                    transition-property: all;
-                    transition-duration: 0.35s;
-                }
-                &.active {
-                    span {
-                        color: #222529;
-                        font-weight: bold;
-                        font-size: 20px;
+        .logo {
+            left: 20px;
+            top: 15px;
+        }
+    }
+    #gallery {
+        padding: 0;
+        #image-gallery {
+            .row {
+                .image {
+                    &.active {
+                        flex-basis: 25%;
+                        max-width: 25%;
                     }
                 }
             }
         }
     }
-
-    .filter {
-        margin-bottom: 0;
-        display: none;
-        span {
-            margin-bottom: 15px;
-            display: inline-block;
-            &:before {
-                bottom: -5px;
-            }
+    .footer {
+        a {
+            font-size: 20px;
         }
-    }
-
-    .about-me {
-        &::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            background: rgba(255, 255, 255, 0.65);
-            display: block;
-            z-index: 0;
-        }
-    }
-
-    .header-text {
-        display: none !important;
     }
 }
 
-@media only screen and (max-width: 420px) {
-    #image-gallery {
-        .row {
-            .image {
-                &.active {
-                    flex-basis: 100%;
-                    max-width: 100%;
+@media screen and (min-width: 1200px) {
+
+    #gallery {
+        #image-gallery {
+            .row {
+                .image {
+                    &.active {
+                        flex-basis: 16.66%;
+                        max-width: 16.66%;
+                    }
                 }
             }
         }
     }
+   
 }
