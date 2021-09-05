@@ -75,11 +75,20 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 1);
     transition-duration: 0.35s;
 
+    &:after {
+        position: absolute;
+        content: url('../images/logo-dark.png');
+        transform: scale(0.35);
+        transform-origin: center;
+        opacity: 0.35;
+    }
+
     img {
-        width: 300px;
+        transform: scale(0.35);
+        transform-origin: center;
     }
 }
 
@@ -94,16 +103,29 @@ body {
     color: #222529;
     z-index: 1;
 
-    // box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     .logo {
+        position: relative;
         img {
             transition-property: all;
             transition-duration: 0.35s;
             cursor: pointer;
             width: 200px;
 
-            &:hover {
-                opacity: 0.8s5;
+            &.logo-overlay {
+                position: absolute;
+                z-index: 0;
+                opacity: 0;
+            }
+        }
+        &:hover {
+            img.actual {
+                position: relative;
+                z-index: -1;
+                opacity: 0.5;
+            }
+            img.logo-overlay {
+                z-index: 1;
+                opacity: 1;
             }
         }
     }
@@ -515,15 +537,32 @@ h1 {
     }
 
     .logo {
+        cursor: pointer;
         position: absolute;
         left: 15px;
         top: 15px;
         padding: 0;
-        background: url('../images/logo.png');
-        background-size: contain;
-        background-repeat: no-repeat;
         width: 200px;
         height: 42px;
+        &:before {
+            position: absolute;
+            content: url('../images/logo.png');
+            transform: scale(0.275);
+            transform-origin: top left;
+        }
+        &:hover { 
+            &:before {
+                opacity: 0.25;
+            }
+            &:after {
+                position: absolute;
+                content: url('../images/logo_loader.gif');
+                transform: scale(0.275);
+                transform-origin: top left;
+                filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(355deg) brightness(102%) contrast(101%);
+                opacity: 1;
+            }
+        }
     }
 
     .project-info {

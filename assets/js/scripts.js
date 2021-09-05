@@ -1,9 +1,10 @@
 
 
-document.addEventListener('DOMContentLoaded', function() {
-  $('#preloader').fadeOut(800);
-}, false);
 
+
+$(window).on('load', function(){
+  $('#preloader').fadeOut();
+})
 $(document).ready(function () {
 
   function shuffle(array) {
@@ -41,7 +42,7 @@ $(document).ready(function () {
     // Lightbox
     var $overlay = $('<div id="overlay"></div>');
     var $image = $('<img class="listItem">');
-    var $logo = $('<div class="logo"></div>')
+    var $logo = $('<a href="index.html" class="logo"></a>')
     var $title = $('<div class="project-info"><h4 class="title">Protectt.ai</h4> <h5>Category: <span class="category">Logo</span></h5> <h5>Tools Used: <span class="tools">Illustrator</span></h5></div>');
     var $prevButton = $('<div id="prevButton"><i class="lni lni-chevron-left"></i></div>');
     var $nextButton = $('<div id="nextButton"><i class="lni lni-chevron-right"></i></div>');
@@ -144,9 +145,9 @@ $(document).ready(function () {
 
   });
 
-  $('.profile-header .logo img').on('mouseover', function(){
-    $(this).attr('src', 'assets/images/logo_hover.png');
-  })
+  // $('.profile-header .logo img').on('mouseover', function(){
+  //   $(this).attr('src', 'assets/images/logo_hover.png');
+  // })
 
 
   $('.filter span').click(function () {

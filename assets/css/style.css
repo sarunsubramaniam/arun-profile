@@ -21,13 +21,26 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: rgba(255, 255, 255, 0.95);
+  background: white;
   -webkit-transition-duration: 0.35s;
           transition-duration: 0.35s;
 }
 
+#preloader:after {
+  position: absolute;
+  content: url("../images/logo-dark.png");
+  -webkit-transform: scale(0.35);
+          transform: scale(0.35);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  opacity: 0.35;
+}
+
 #preloader img {
-  width: 300px;
+  -webkit-transform: scale(0.35);
+          transform: scale(0.35);
+  -webkit-transform-origin: center;
+          transform-origin: center;
 }
 
 .profile-header {
@@ -46,6 +59,10 @@ body {
   z-index: 1;
 }
 
+.profile-header .logo {
+  position: relative;
+}
+
 .profile-header .logo img {
   -webkit-transition-property: all;
   transition-property: all;
@@ -55,8 +72,21 @@ body {
   width: 200px;
 }
 
-.profile-header .logo img:hover {
-  opacity: 0.8s5;
+.profile-header .logo img.logo-overlay {
+  position: absolute;
+  z-index: 0;
+  opacity: 0;
+}
+
+.profile-header .logo:hover img.actual {
+  position: relative;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.profile-header .logo:hover img.logo-overlay {
+  z-index: 1;
+  opacity: 1;
 }
 
 .profile-header .menu {
@@ -701,15 +731,38 @@ h1 {
 }
 
 #overlay .logo {
+  cursor: pointer;
   position: absolute;
   left: 15px;
   top: 15px;
   padding: 0;
-  background: url("../images/logo.png");
-  background-size: contain;
-  background-repeat: no-repeat;
   width: 200px;
   height: 42px;
+}
+
+#overlay .logo:before {
+  position: absolute;
+  content: url("../images/logo.png");
+  -webkit-transform: scale(0.275);
+          transform: scale(0.275);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+#overlay .logo:hover:before {
+  opacity: 0.25;
+}
+
+#overlay .logo:hover:after {
+  position: absolute;
+  content: url("../images/logo_loader.gif");
+  -webkit-transform: scale(0.275);
+          transform: scale(0.275);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(355deg) brightness(102%) contrast(101%);
+          filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(355deg) brightness(102%) contrast(101%);
+  opacity: 1;
 }
 
 #overlay .project-info {
