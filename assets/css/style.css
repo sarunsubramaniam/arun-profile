@@ -85,6 +85,7 @@ body {
 }
 
 .profile-header .logo:hover img.logo-overlay {
+  top: 0;
   z-index: 1;
   opacity: 1;
 }
@@ -844,6 +845,9 @@ h1 {
   .profile-header .logo img {
     -webkit-transform: scale(1);
             transform: scale(1);
+  }
+  .profile-header .logo:hover img.logo-overlay {
+    top: initial;
   }
   .profile-header .menu {
     display: -webkit-box;

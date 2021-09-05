@@ -124,6 +124,7 @@ body {
                 opacity: 0.5;
             }
             img.logo-overlay {
+                top: 0;
                 z-index: 1;
                 opacity: 1;
             }
@@ -644,6 +645,11 @@ h1 {
 
             img {
                 transform: scale(1);
+            }
+            &:hover {
+                img.logo-overlay {
+                    top: initial;
+                }
             }
         }
 
