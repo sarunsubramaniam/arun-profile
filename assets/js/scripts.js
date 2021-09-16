@@ -151,6 +151,9 @@ $(document).ready(function () {
 
 
   $('.filter span').click(function () {
+    $('html, body').animate({
+      scrollTop: $('#image-gallery').offset().top - 88 //#DIV_ID is an example. Use the id of your destination on the page
+  }, 500);
     let currentList = $(this).attr('data-item');
     $('.filter span').removeClass('active');
     $(this).addClass('active');

@@ -319,7 +319,7 @@ h1 {
 .about-me .info ul.skill li {
   display: inline-block;
   padding: 4px 16px;
-  margin: 4px 0 0 0;
+  margin: 5px 2px 0 0;
   font-size: 13px;
 }
 
@@ -370,7 +370,7 @@ h1 {
 
 .portfolio-section {
   padding: 45px 15px 0;
-  background: #f5f5f7;
+  background: #f8f8f9;
 }
 
 .portfolio-section h1 {
@@ -411,7 +411,7 @@ h1 {
 .portfolio-section .info ul.skill li {
   display: inline-block;
   padding: 4px 16px;
-  margin: 4px 0 0 0;
+  margin: 5px 2px 0 0;
   font-size: 13px;
 }
 
