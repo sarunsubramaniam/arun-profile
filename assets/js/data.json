@@ -123,7 +123,7 @@
       "cls": "digital",
       "title": "Dhanush",
       "category": "Digital Art",
-      "tools": "Procreate Pocket, Digital Stylus"
+      "tools": "Procreate, Digital Stylus"
     },
     {
       "image": "digital-art-nikhil",
@@ -152,6 +152,13 @@
       "title": "Lion King Poly Art",
       "category": "Digital Art",
       "tools": "Illustrator"
+    },
+    {
+      "image": "Ganesh",
+      "cls": "digital",
+      "title": "Ganesh",
+      "category": "Digital Art",
+      "tools": "Procreate, Apple Pencil"
     },
     {
       "image": "charlie-chaplin",

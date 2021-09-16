@@ -1,6 +1,13 @@
 body {
-  font-family: "Overpass Mono", monospace;
-  color: #657786;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #1d1d1f;
+}
+
+mark {
+  background-clip: text;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ed186a), color-stop(100%, #ff6700), color-stop(200%, #ffcb39), color-stop(300%, #1d1d1f));
+  background-image: linear-gradient(90deg, #ed186a 0%, #ff6700 100%, #ffcb39 200%, #1d1d1f 300%);
+  -webkit-text-fill-color: transparent;
 }
 
 /* Mixins */
@@ -54,7 +61,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 75px;
+  height: 44px;
   color: #222529;
   z-index: 1;
 }
@@ -69,11 +76,12 @@ body {
   -webkit-transition-duration: 0.35s;
           transition-duration: 0.35s;
   cursor: pointer;
-  width: 200px;
+  width: 150px;
 }
 
 .profile-header .logo img.logo-overlay {
   position: absolute;
+  top: 0;
   z-index: 0;
   opacity: 0;
 }
@@ -85,7 +93,6 @@ body {
 }
 
 .profile-header .logo:hover img.logo-overlay {
-  top: 0;
   z-index: 1;
   opacity: 1;
 }
@@ -103,48 +110,25 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 75px;
+  height: 44px;
 }
 
 .profile-header .menu ul li {
   display: inline-block;
-  padding: 0 20px;
+  padding: 0 16px;
   vertical-align: middle;
   cursor: pointer;
 }
 
 .profile-header .menu ul li.header-text {
   position: relative;
-  color: #657786;
-  text-transform: uppercase;
-}
-
-.profile-header .menu ul li.header-text:after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -12px;
-  margin: 0 auto;
-  width: 0;
-  height: 0;
-  border-radius: 50%;
-  background-color: #222529;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -webkit-transition-duration: 0.35s;
-          transition-duration: 0.35s;
-  -webkit-transform-origin: center;
-          transform-origin: center;
+  color: #000;
+  opacity: 0.56;
+  font-size: 13px;
 }
 
 .profile-header .menu ul li.header-text.active {
-  color: #222529;
-}
-
-.profile-header .menu ul li.header-text.active:after {
-  width: 5px;
-  height: 5px;
+  opacity: 1;
 }
 
 .profile-header .menu ul li:hover {
@@ -258,7 +242,7 @@ body {
 
 h1 {
   font-weight: 700;
-  color: #222529;
+  color: #000;
 }
 
 .about-me {
@@ -308,23 +292,17 @@ h1 {
 .about-me .info h1 {
   font-size: 40px;
   font-weight: 400;
-  color: #222529;
   position: relative;
   display: inline-block;
+  color: #1d1d1f;
 }
 
 .about-me .info h1 span {
   font-weight: 700;
-}
-
-.about-me .info h1:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 50px;
-  background: #222529;
-  height: 4px;
-  bottom: -10px;
+  background-clip: text;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ed186a), color-stop(100%, #ff6700), color-stop(200%, #ffcb39), color-stop(300%, #1d1d1f));
+  background-image: linear-gradient(90deg, #ed186a 0%, #ff6700 100%, #ffcb39 200%, #1d1d1f 300%);
+  -webkit-text-fill-color: transparent;
 }
 
 .about-me .info p {
@@ -340,58 +318,59 @@ h1 {
 
 .about-me .info ul.skill li {
   display: inline-block;
-  padding: 5px 10px;
-  margin: 5px 0;
+  padding: 4px 16px;
+  margin: 4px 0 0 0;
+  font-size: 13px;
 }
 
 .about-me .info ul.skill li.ps {
   color: #2cc2f8;
-  border: 2px solid #2cc2f8;
+  border: 1px solid #2cc2f8;
 }
 
 .about-me .info ul.skill li.ai {
   color: #f47900;
-  border: 2px solid #f47900;
+  border: 1px solid #f47900;
 }
 
 .about-me .info ul.skill li.xd {
-  color: #f32abd;
-  border: 2px solid #f32abd;
+  color: #804670;
+  border: 1px solid #804670;
 }
 
 .about-me .info ul.skill li.figma {
   color: #f76e5e;
-  border: 2px solid #f76e5e;
+  border: 1px solid #f76e5e;
 }
 
 .about-me .info ul.skill li.sketchbook {
   color: #dd5636;
-  border: 2px solid #dd5636;
+  border: 1px solid #dd5636;
 }
 
 .about-me .info ul.skill li.procreate {
   color: #da1852;
-  border: 2px solid #da1852;
+  border: 1px solid #da1852;
 }
 
 .about-me .info ul.skill li.html {
   color: #eb6227;
-  border: 2px solid #eb6227;
+  border: 1px solid #eb6227;
 }
 
 .about-me .info ul.skill li.css {
   color: #27a4da;
-  border: 2px solid #27a4da;
+  border: 1px solid #27a4da;
 }
 
 .about-me .info ul.skill li.js {
   color: #ccbb43;
-  border: 2px solid #ccbb43;
+  border: 1px solid #ccbb43;
 }
 
 .portfolio-section {
   padding: 45px 15px 0;
-  background: #fafafa;
+  background: #f5f5f7;
 }
 
 .portfolio-section h1 {
@@ -405,23 +384,17 @@ h1 {
 .portfolio-section .info h1 {
   font-size: 40px;
   font-weight: 400;
-  color: #222529;
   position: relative;
   display: inline-block;
+  color: #1d1d1f;
 }
 
 .portfolio-section .info h1 span {
   font-weight: 700;
-}
-
-.portfolio-section .info h1:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 50px;
-  background: #222529;
-  height: 4px;
-  bottom: -10px;
+  background-clip: text;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ed186a), color-stop(100%, #ff6700), color-stop(200%, #ffcb39), color-stop(300%, #1d1d1f));
+  background-image: linear-gradient(90deg, #ed186a 0%, #ff6700 100%, #ffcb39 200%, #1d1d1f 300%);
+  -webkit-text-fill-color: transparent;
 }
 
 .portfolio-section .info p {
@@ -437,60 +410,61 @@ h1 {
 
 .portfolio-section .info ul.skill li {
   display: inline-block;
-  padding: 5px 10px;
-  margin: 5px 0;
+  padding: 4px 16px;
+  margin: 4px 0 0 0;
+  font-size: 13px;
 }
 
 .portfolio-section .info ul.skill li.ps {
   color: #2cc2f8;
-  border: 2px solid #2cc2f8;
+  border: 1px solid #2cc2f8;
 }
 
 .portfolio-section .info ul.skill li.ai {
   color: #f47900;
-  border: 2px solid #f47900;
+  border: 1px solid #f47900;
 }
 
 .portfolio-section .info ul.skill li.xd {
-  color: #f32abd;
-  border: 2px solid #f32abd;
+  color: #804670;
+  border: 1px solid #804670;
 }
 
 .portfolio-section .info ul.skill li.figma {
   color: #f76e5e;
-  border: 2px solid #f76e5e;
+  border: 1px solid #f76e5e;
 }
 
 .portfolio-section .info ul.skill li.sketchbook {
   color: #dd5636;
-  border: 2px solid #dd5636;
+  border: 1px solid #dd5636;
 }
 
 .portfolio-section .info ul.skill li.procreate {
   color: #da1852;
-  border: 2px solid #da1852;
+  border: 1px solid #da1852;
 }
 
 .portfolio-section .info ul.skill li.html {
   color: #eb6227;
-  border: 2px solid #eb6227;
+  border: 1px solid #eb6227;
 }
 
 .portfolio-section .info ul.skill li.css {
   color: #27a4da;
-  border: 2px solid #27a4da;
+  border: 1px solid #27a4da;
 }
 
 .portfolio-section .info ul.skill li.js {
   color: #ccbb43;
-  border: 2px solid #ccbb43;
+  border: 1px solid #ccbb43;
 }
 
 .filter {
   position: -webkit-sticky;
   position: sticky;
-  top: 75px;
-  min-height: 60px;
+  top: 44px;
+  min-height: 44px;
   display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -498,14 +472,13 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #fafafa;
+  background: #f5f5f7;
   z-index: 1;
 }
 
 .filter span {
   cursor: pointer;
-  font-size: 14px;
-  text-transform: uppercase;
+  font-size: 13px;
   padding: 5px 15px;
   opacity: 0.65;
   -webkit-transition-property: all;
@@ -513,37 +486,16 @@ h1 {
   -webkit-transition-duration: 0.35s;
           transition-duration: 0.35s;
   position: relative;
+  color: #000;
+  opacity: 0.56;
 }
 
 .filter span:hover {
   opacity: 1;
 }
 
-.filter span:before {
-  content: '';
-  position: absolute;
-  bottom: -18px;
-  left: 50%;
-  right: 50%;
-  margin: 0 auto;
-  height: 4px;
-  background-color: #222529;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -webkit-transition-duration: 0.35s;
-          transition-duration: 0.35s;
-  -webkit-transform-origin: center;
-          transform-origin: center;
-}
-
 .filter span.active {
-  color: #222529;
   opacity: 1;
-}
-
-.filter span.active:before {
-  left: 0;
-  right: 0;
 }
 
 #gallery {
@@ -737,15 +689,15 @@ h1 {
   left: 15px;
   top: 15px;
   padding: 0;
-  width: 200px;
-  height: 42px;
+  width: 150px;
+  height: 30px;
 }
 
 #overlay .logo:before {
   position: absolute;
   content: url("../images/logo.png");
-  -webkit-transform: scale(0.275);
-          transform: scale(0.275);
+  -webkit-transform: scale(0.195);
+          transform: scale(0.195);
   -webkit-transform-origin: top left;
           transform-origin: top left;
 }
@@ -757,8 +709,8 @@ h1 {
 #overlay .logo:hover:after {
   position: absolute;
   content: url("../images/logo_loader.gif");
-  -webkit-transform: scale(0.275);
-          transform: scale(0.275);
+  -webkit-transform: scale(0.195);
+          transform: scale(0.195);
   -webkit-transform-origin: top left;
           transform-origin: top left;
   -webkit-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(355deg) brightness(102%) contrast(101%);
@@ -836,17 +788,17 @@ h1 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    height: 75px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    height: 44px;
     padding: 0;
   }
   .profile-header .logo img {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  .profile-header .logo:hover img.logo-overlay {
+  .profile-header .logo img.logo-overlay {
     top: initial;
   }
   .profile-header .menu {
