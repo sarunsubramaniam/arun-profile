@@ -3,11 +3,71 @@ body {
   color: #1d1d1f;
 }
 
+body.dark {
+  color: #f5f5f7;
+  background-color: #000;
+}
+
+body.dark h1 {
+  color: #fff;
+}
+
+body.dark .about-me .info h1 {
+  color: #f5f5f7;
+}
+
+body.dark .about-me .info ul.skill li {
+  border: 1px solid #f5f5f7;
+  color: #f5f5f7;
+}
+
+body.dark .profile-header {
+  background-color: #000 !important;
+}
+
+body.dark .profile-header .logo {
+  -webkit-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(355deg) brightness(102%) contrast(101%);
+          filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(355deg) brightness(102%) contrast(101%);
+}
+
+body.dark .profile-header .menu ul li.header-text {
+  color: #fff;
+}
+
+body.dark .portfolio-section {
+  background-color: #1d1d1f;
+}
+
+body.dark .portfolio-section .info h1 {
+  color: #f5f5f7;
+}
+
+body.dark .filter {
+  background-color: #1d1d1f;
+}
+
+body.dark .filter span {
+  color: #fff;
+}
+
+body.dark .footer {
+  background-color: #1d1d1f;
+}
+
 mark {
   background-clip: text;
   background-image: -webkit-gradient(linear, left top, right top, from(#ed186a), color-stop(100%, #ff6700), color-stop(200%, #ffcb39), color-stop(300%, #1d1d1f));
   background-image: linear-gradient(90deg, #ed186a 0%, #ff6700 100%, #ffcb39 200%, #1d1d1f 300%);
   -webkit-text-fill-color: transparent;
+}
+
+a {
+  color: #2997FF;
+}
+
+a:hover {
+  color: #2997FF;
+  opacity: 0.85;
 }
 
 /* Mixins */
@@ -97,6 +157,30 @@ mark {
   opacity: 1;
 }
 
+.profile-header .switch {
+  border: 1px solid #2997FF;
+  border-radius: 15px;
+  padding: 2px 1px;
+}
+
+.profile-header .switch span {
+  cursor: pointer;
+  padding: 2px 8px;
+  border-radius: 15px;
+  color: #2997FF;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+}
+
+.profile-header .switch span.active {
+  background-color: #2997FF;
+  color: #fff;
+}
+
 .profile-header .menu {
   display: none;
 }
@@ -166,6 +250,7 @@ mark {
   text-align: center;
   padding: 30px 0;
   background-color: #fff;
+  color: #1d1d1f;
   z-index: 1;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
@@ -253,7 +338,6 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url("../images/developer.jpg");
   background-position-x: 0%;
   background-position-y: 0%;
   background-repeat: repeat;
@@ -263,18 +347,6 @@ h1 {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right bottom;
-}
-
-.about-me::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background: rgba(255, 255, 255, 0.65);
-  display: block;
-  z-index: 0;
 }
 
 .about-me .developer img {
@@ -321,51 +393,8 @@ h1 {
   padding: 4px 16px;
   margin: 5px 2px 0 0;
   font-size: 13px;
-}
-
-.about-me .info ul.skill li.ps {
-  color: #2cc2f8;
-  border: 1px solid #2cc2f8;
-}
-
-.about-me .info ul.skill li.ai {
-  color: #f47900;
-  border: 1px solid #f47900;
-}
-
-.about-me .info ul.skill li.xd {
-  color: #804670;
-  border: 1px solid #804670;
-}
-
-.about-me .info ul.skill li.figma {
-  color: #f76e5e;
-  border: 1px solid #f76e5e;
-}
-
-.about-me .info ul.skill li.sketchbook {
-  color: #dd5636;
-  border: 1px solid #dd5636;
-}
-
-.about-me .info ul.skill li.procreate {
-  color: #da1852;
-  border: 1px solid #da1852;
-}
-
-.about-me .info ul.skill li.html {
-  color: #eb6227;
-  border: 1px solid #eb6227;
-}
-
-.about-me .info ul.skill li.css {
-  color: #27a4da;
-  border: 1px solid #27a4da;
-}
-
-.about-me .info ul.skill li.js {
-  color: #ccbb43;
-  border: 1px solid #ccbb43;
+  border: 1px solid #1d1d1f;
+  color: #1d1d1f;
 }
 
 .portfolio-section {
@@ -413,51 +442,8 @@ h1 {
   padding: 4px 16px;
   margin: 5px 2px 0 0;
   font-size: 13px;
-}
-
-.portfolio-section .info ul.skill li.ps {
-  color: #2cc2f8;
-  border: 1px solid #2cc2f8;
-}
-
-.portfolio-section .info ul.skill li.ai {
-  color: #f47900;
-  border: 1px solid #f47900;
-}
-
-.portfolio-section .info ul.skill li.xd {
-  color: #804670;
-  border: 1px solid #804670;
-}
-
-.portfolio-section .info ul.skill li.figma {
-  color: #f76e5e;
-  border: 1px solid #f76e5e;
-}
-
-.portfolio-section .info ul.skill li.sketchbook {
-  color: #dd5636;
-  border: 1px solid #dd5636;
-}
-
-.portfolio-section .info ul.skill li.procreate {
-  color: #da1852;
-  border: 1px solid #da1852;
-}
-
-.portfolio-section .info ul.skill li.html {
-  color: #eb6227;
-  border: 1px solid #eb6227;
-}
-
-.portfolio-section .info ul.skill li.css {
-  color: #27a4da;
-  border: 1px solid #27a4da;
-}
-
-.portfolio-section .info ul.skill li.js {
-  color: #ccbb43;
-  border: 1px solid #ccbb43;
+  border: 1px solid #1d1d1f;
+  color: #1d1d1f;
 }
 
 .filter {
@@ -509,6 +495,7 @@ h1 {
 #gallery #image-gallery {
   padding: 0;
   overflow: hidden;
+  background-color: #f5f5f7;
 }
 
 #gallery #image-gallery .row {
@@ -646,7 +633,7 @@ h1 {
 }
 
 #overlay {
-  background: #2b2b2b;
+  background: #1d1d1f;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
   position: fixed;
@@ -805,11 +792,11 @@ h1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   #bottom-drawer {
-    display: none;
-  }
-  .about-me:before {
     display: none;
   }
   .filter {

@@ -171,6 +171,12 @@ $(document).ready(function () {
   $('#bottom-drawer ul li').click(function () {
     $('#bottom-drawer ul li').removeClass('active');
     $(this).addClass('active');
+  });
+
+  $('.switch span').click(function(){
+    $('.switch span').removeClass('active');
+    $(this).addClass('active');
+    $('body').toggleClass('dark');
   })
 
   $(window).scroll(function () {

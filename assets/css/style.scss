@@ -1,12 +1,75 @@
 body {
     font-family: 'Source Sans Pro', sans-serif;
     color: #1d1d1f;
+    &.dark {
+        color: #f5f5f7;
+        background-color: #000;
+        h1 {
+            color: #fff;
+        }
+        .about-me {
+            .info {
+                h1 {
+                    color: #f5f5f7;
+                }
+                ul {
+                    &.skill {
+                        li {
+                            border: 1px solid #f5f5f7;
+                            color: #f5f5f7;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .profile-header {
+            background-color: #000 !important;
+            .logo {
+                filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(355deg) brightness(102%) contrast(101%);
+            }
+            .menu {
+                ul {
+                    li {
+                        &.header-text {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+        .portfolio-section {
+            background-color: #1d1d1f;
+            .info {
+                h1 {
+                    color: #f5f5f7;
+                }
+            }
+        }
+        .filter {
+            background-color: #1d1d1f;
+            span {
+                color: #fff;
+            }
+        }
+        .footer {
+            background-color: #1d1d1f;
+        }
+    } 
 }
 
 mark {
     background-clip: text;
     background-image: linear-gradient(90deg, rgb(237, 24, 106) 0%, rgb(255, 103, 0) 100%, rgb(255, 203, 57) 200%, rgb(29, 29, 31) 300%);
     -webkit-text-fill-color: transparent;
+}
+
+a {
+    color: #2997FF;
+    &:hover {
+        color: #2997FF;
+        opacity: 0.85;
+    }
 }
 
 /* Mixins */
@@ -57,16 +120,18 @@ mark {
                     padding: 4px 16px;
                     margin: 5px 2px 0 0;
                     font-size: 13px;
+                    border: 1px solid #1d1d1f;
+                    color: #1d1d1f;
 
-                    $skills: ("ps": #2cc2f8, "ai": #f47900, "xd": #804670, "figma": #f76e5e, "sketchbook": #dd5636, "procreate": #da1852, "html": #eb6227, "css": #27a4da, "js": #ccbb43);
+                    // $skills: ("ps": #2cc2f8, "ai": #f47900, "xd": #804670, "figma": #f76e5e, "sketchbook": #dd5636, "procreate": #da1852, "html": #eb6227, "css": #27a4da, "js": #ccbb43);
 
-                    @each $skill,
-                    $color in $skills {
-                        &.#{$skill} {
-                            color: $color;
-                            border: 1px solid $color;
-                        }
-                    }
+                    // @each $skill,
+                    // $color in $skills {
+                    //     &.#{$skill} {
+                    //         color: $color;
+                    //         border: 1px solid $color;
+                    //     }
+                    // }
                 }
             }
         }
@@ -141,6 +206,25 @@ mark {
         }
     }
 
+    .switch {
+        border: 1px solid #2997FF;
+        border-radius: 15px;
+        padding: 2px 1px;
+        span {
+            cursor: pointer;
+            padding: 2px 8px;
+            border-radius: 15px;
+            color: #2997FF;
+            transition-property: all;
+            transition-duration: 0.3s;
+            transition-timing-function: ease-out;
+            &.active {
+                background-color: #2997FF;
+                color: #fff;
+            }
+        }
+    }
+
     .menu {
         display: none;
 
@@ -201,6 +285,7 @@ mark {
     text-align: center;
     padding: 30px 0;
     background-color: #fff;
+    color: #1d1d1f;
     z-index: 1;
     transform: translateY(100%);
     transition-property: all;
@@ -273,7 +358,7 @@ h1 {
     height: 100vh;
     display: flex;
     align-items: center;
-    background: url('../images/developer.jpg');
+    // background: url('../images/developer.jpg');
     background-position-x: 0%;
     background-position-y: 0%;
     background-repeat: repeat;
@@ -283,18 +368,6 @@ h1 {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right bottom;
-
-    &::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        background: rgba(255, 255, 255, 0.65);
-        display: block;
-        z-index: 0;
-    }
 
     .developer {
         img {
@@ -361,6 +434,7 @@ h1 {
     #image-gallery {
         padding: 0;
         overflow: hidden;
+        background-color: #f5f5f7;
 
         .row {
             display: flex;
@@ -480,7 +554,7 @@ h1 {
 }
 
 #overlay {
-    background: rgb(43, 43, 43);
+    background: #1d1d1f;
     transform: translateY(100%);
     position: fixed;
     top: 0;
@@ -624,17 +698,12 @@ h1 {
 
         .menu {
             display: flex;
+            align-items: center;
         }
     }
 
     #bottom-drawer {
         display: none;
-    }
-
-    .about-me {
-        &:before {
-            display: none;
-        }
     }
 
     .filter {
