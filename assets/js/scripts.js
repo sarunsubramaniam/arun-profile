@@ -3,7 +3,7 @@
 
 
 $(window).on('load', function(){
-  $('#preloader').fadeOut();
+  $('#preloader').removeClass('active');
 })
 $(document).ready(function () {
 

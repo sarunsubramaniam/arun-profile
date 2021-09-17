@@ -74,31 +74,31 @@ a:hover {
 
 @-webkit-keyframes rotate {
   0% {
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg);
+    -webkit-transform: scale(0.05) rotateY(0deg);
+            transform: scale(0.05) rotateY(0deg);
   }
   50% {
-    -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg);
+    -webkit-transform: scale(0.05) rotateY(180deg);
+            transform: scale(0.05) rotateY(180deg);
   }
   100% {
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg);
+    -webkit-transform: scale(0.05) rotateY(0deg);
+            transform: scale(0.05) rotateY(0deg);
   }
 }
 
 @keyframes rotate {
   0% {
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg);
+    -webkit-transform: scale(0.05) rotateY(0deg);
+            transform: scale(0.05) rotateY(0deg);
   }
   50% {
-    -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg);
+    -webkit-transform: scale(0.05) rotateY(180deg);
+            transform: scale(0.05) rotateY(180deg);
   }
   100% {
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg);
+    -webkit-transform: scale(0.05) rotateY(0deg);
+            transform: scale(0.05) rotateY(0deg);
   }
 }
 
@@ -109,9 +109,7 @@ a:hover {
   bottom: 0;
   left: 0;
   right: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -121,12 +119,15 @@ a:hover {
   background: white;
 }
 
+#preloader.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 #preloader img {
-  width: 50px;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-animation: rotate 1s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
-          animation: rotate 1s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+  -webkit-animation: rotate 1s linear infinite;
+          animation: rotate 1s linear infinite;
 }
 
 .profile-header {
@@ -417,6 +418,7 @@ h1 {
 .about-me .info ul.skill {
   padding-top: 10px;
   padding-left: 0;
+  text-align: left;
 }
 
 .about-me .info ul.skill li {
@@ -509,6 +511,7 @@ h1 {
 .portfolio-section .info ul.skill {
   padding-top: 10px;
   padding-left: 0;
+  text-align: left;
 }
 
 .portfolio-section .info ul.skill li {
