@@ -145,15 +145,11 @@ $(document).ready(function () {
 
   });
 
-  // $('.profile-header .logo img').on('mouseover', function(){
-  //   $(this).attr('src', 'assets/images/logo_hover.png');
-  // })
-
 
   $('.filter span').click(function () {
     $('html, body').animate({
       scrollTop: $('#image-gallery').offset().top - 88 //#DIV_ID is an example. Use the id of your destination on the page
-  }, 500);
+    }, 800);
     let currentList = $(this).attr('data-item');
     $('.filter span').removeClass('active');
     $(this).addClass('active');
@@ -174,6 +170,7 @@ $(document).ready(function () {
   });
 
   $('.switch span').click(function(){
+    let currentTheme = $(this).text();
     $('.switch span').removeClass('active');
     $(this).addClass('active');
     $('body').toggleClass('dark');
