@@ -132,6 +132,14 @@ a {
     }
 }
 
+svg:not(:root) {
+    overflow: visible;
+}
+
+.artworkWrapper {
+    transform: translate(-50%, 0);
+}
+
 @keyframes rotate {
     0% {
         transform: scale(.05) rotateY(0deg);

@@ -212,4 +212,34 @@ $(document).ready(function () {
     }, 500);
   });
 
+  const triangleOne = $('.triangleOne'),
+   triangleTwo = $('.triangleTwo'),
+   circleOne = $('.circleOne'),
+   circleTwo = $('.circleTwo'),
+   circleThree = $('.circleThree'),
+   circleFour = $('.circleFour'),
+   triangleSmall = $('.triangleSmall'),
+   artworkWrapper = $('.artworkWrapper'),
+   polyart = $('.polyart *'),
+   greeting = $('#about-me .info h1'),
+   description = $('#about-me .info p'),
+   skillList = $('#about-me .info ul');
+
+  const tl = new TimelineLite({ paused: true });
+
+  tl.fromTo(triangleOne, 2, {rotation: '0_cw',transformOrigin: 'center',ease: Elastic.easeOut, opacity: 0}, {rotation: '360_cw', ease: Elastic.easeOut, opacity: 1})
+  .to(triangleTwo, 2, {rotation: '360_ccw',transformOrigin: 'center',ease: Elastic.easeOut }, "-=2")
+  .fromTo(polyart, { duration: .5, scale: 0, y: 40, opacity: 0, ease: "Elastic.easeOut",stagger: {grid: "auto",from: "edges",ease: "Elastic.easeOut",amount: 1.5}}, { duration: .5, scale: 1, y: 40, opacity: 1, ease: "Elastic.easeOut", stagger: { grid: "auto", from: "edges", ease: "Elastic.easeOut", amount: 1.5 }})
+  .fromTo(circleOne, 0.5, {x: 70,y: -100,opacity: 0, ease: Elastic.easeOut}, {x: 0,y: 0,opacity: 1, ease: Elastic.easeOut}, "-=0.5")
+  .fromTo(circleTwo, 0.5, {x: -80,y: 50,opacity: 0, ease: Elastic.easeOut}, {x: 0,y: 0,opacity: 1, ease: Elastic.easeOut}, "-=0.5")
+  .fromTo(circleThree, 0.5, {x: -40,y: 70,opacity: 0, ease: Elastic.easeOut}, {x: 0,y: 0,opacity: 1, ease: Elastic.easeOut}, "-=0.5")
+  .fromTo(circleFour, 0.5, {x: -40,y: -110,opacity: 0, ease: Elastic.easeOut}, {x: 0,y: 0,opacity: 1, ease: Elastic.easeOut}, "-=0.5")
+  .fromTo(triangleSmall, 0.5, {x: 100,y: 80,opacity: 0, ease: Elastic.easeOut}, {x: 0,y: 0,opacity: 1, ease: Elastic.easeOut}, "-=0.5")
+  .to(artworkWrapper, 0.25, {x: 0, y: 0, ease: Power2.easeOut})
+  .fromTo(greeting, 1, {y: 40,opacity: 0, ease: Elastic.easeOut}, {y: 0,opacity: 1, ease: Elastic.easeOut})
+  .fromTo(description, 1, {y: 40,opacity: 0, ease: Elastic.easeOut}, {y: 0,opacity: 1, ease: Elastic.easeOut}, "-=.5")
+  .fromTo(skillList, 1, {y: 40,opacity: 0, ease: Elastic.easeOut}, {y: 0,opacity: 1, ease: Elastic.easeOut}, "-=.5");
+
+  tl.play();
+
 });

@@ -72,6 +72,15 @@ a:hover {
   opacity: 0.85;
 }
 
+svg:not(:root) {
+  overflow: visible;
+}
+
+.artworkWrapper {
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
 @-webkit-keyframes rotate {
   0% {
     -webkit-transform: scale(0.05) rotateY(0deg);
