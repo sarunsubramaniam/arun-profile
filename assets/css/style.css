@@ -1,11 +1,10 @@
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  color: #1d1d1f;
+  color: #5a7189;
 }
 
 body.dark {
-  color: #f5f5f7;
-  background-color: #000;
+  background-color: #121e2a;
 }
 
 body.dark mark {
@@ -25,8 +24,16 @@ body.dark .about-me .info ul.skill li {
   color: #f5f5f7;
 }
 
+body.dark #bottom-drawer .drawer-icon {
+  background: #fff;
+}
+
+body.dark #bottom-drawer .drawer-icon i {
+  color: #172231;
+}
+
 body.dark .profile-header {
-  background-color: #000 !important;
+  background-color: #121e2a !important;
 }
 
 body.dark .profile-header .logo {
@@ -35,11 +42,11 @@ body.dark .profile-header .logo {
 }
 
 body.dark .profile-header .menu ul li.header-text {
-  color: #fff;
+  color: #5a7189;
 }
 
 body.dark .portfolio-section {
-  background-color: #1d1d1f;
+  background-color: #172231;
 }
 
 body.dark .portfolio-section .info h1 {
@@ -47,15 +54,19 @@ body.dark .portfolio-section .info h1 {
 }
 
 body.dark .filter {
-  background-color: #1d1d1f;
+  background-color: #172231;
 }
 
 body.dark .filter span {
-  color: #fff;
+  color: #5a7189;
+}
+
+body.dark .filter span.active {
+  color: #f5f5f7;
 }
 
 body.dark .footer {
-  background-color: #1d1d1f;
+  background-color: #172231;
 }
 
 /* Mixins */
@@ -75,7 +86,43 @@ a:hover {
 }
 
 svg:not(:root) {
+  position: relative;
   overflow: visible;
+}
+
+.polyart polygon, .polyart polyline {
+  display: none;
+}
+
+.triangleTwo {
+  fill: #1c293a !important;
+}
+
+.triangleSmall {
+  fill: #2f4766 !important;
+}
+
+.triangleOne,
+.circleFour {
+  fill: #e39807 !important;
+}
+
+.circleOne {
+  stroke: #d83010 !important;
+}
+
+.circleTwo {
+  stroke: #0170c3 !important;
+}
+
+.circleThree {
+  stroke: #188e57 !important;
+}
+
+.embedded-img image {
+  width: 80%;
+  -webkit-transform: translate(80px, 60px);
+          transform: translate(80px, 60px);
 }
 
 .artworkWrapper {
@@ -175,11 +222,11 @@ svg:not(:root) {
 }
 
 .profile-header .switch {
-  border: 1px solid #0071e3;
-  border-radius: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: 1px solid #0071e3;
+  border-radius: 15px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -290,7 +337,7 @@ svg:not(:root) {
   text-align: center;
   padding: 30px 0;
   background-color: #fff;
-  color: #1d1d1f;
+  color: #172231;
   z-index: 1;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
@@ -316,7 +363,7 @@ svg:not(:root) {
   cursor: pointer;
   position: absolute;
   top: -24px;
-  background: #222529;
+  background: #172231;
   width: 48px;
   height: 48px;
   border-radius: 50%;
@@ -329,6 +376,8 @@ svg:not(:root) {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.25);
 }
 
 #bottom-drawer .drawer-icon i {
@@ -360,7 +409,6 @@ svg:not(:root) {
 }
 
 #bottom-drawer ul li.active span {
-  color: #222529;
   font-weight: bold;
   font-size: 20px;
 }
@@ -410,12 +458,12 @@ h1 {
   font-weight: 400;
   position: relative;
   display: inline-block;
-  color: #1d1d1f;
+  color: #172231;
 }
 
 .about-me .info h1 span {
   font-weight: 700;
-  color: #F5A302;
+  color: #e39807;
 }
 
 .about-me .info p {
@@ -500,12 +548,12 @@ h1 {
   font-weight: 400;
   position: relative;
   display: inline-block;
-  color: #1d1d1f;
+  color: #172231;
 }
 
 .portfolio-section .info h1 span {
   font-weight: 700;
-  color: #F5A302;
+  color: #e39807;
 }
 
 .portfolio-section .info p {
@@ -759,7 +807,7 @@ h1 {
 }
 
 #overlay {
-  background: #1d1d1f;
+  background: #172231;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
   position: fixed;
@@ -932,7 +980,7 @@ h1 {
     padding: 45px 0 0;
   }
   #overlay img.listItem {
-    width: 40%;
+    width: 45%;
   }
   #overlay .logo {
     left: 20px;

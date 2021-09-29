@@ -30,7 +30,7 @@ $(document).ready(function () {
     Object.entries(data).forEach(([key, value]) => {
       $('#image-gallery .row').append(`<div class="all ${value.cls} image active"z>
           <div class="img-wrapper">
-          <a href="assets/images/portfolio/${value.image}.png" data-title="${value.title}" data-category="${value.category}" data-tools="${value.tools}"><img class="img-responsive" src="assets/images/portfolio/${value.image}.png" ></a>
+          <a href="assets/images/portfolio/${value.image}.${value.type}" data-title="${value.title}" data-category="${value.category}" data-tools="${value.tools}"><img class="img-responsive" src="assets/images/portfolio/${value.image}.${value.type}" ></a>
           <div class="img-overlay">
             <span>${value.title}</span>
             <h5>${value.category}</h5>
@@ -174,7 +174,8 @@ $(document).ready(function () {
     $('.switch span').removeClass('active');
     $(this).addClass('active');
     $('body').toggleClass('dark');
-  })
+    tl.restart();
+  });
 
   $(window).scroll(function () {
     var height = $(window).scrollTop();
@@ -221,17 +222,17 @@ $(document).ready(function () {
    triangleSmall = $('.triangleSmall'),
    artworkWrapper = $('.artworkWrapper'),
    polyart = $('.polyart *'),
+   profileImg = $('.embedded-img'),
    greeting = $('#about-me .info h1'),
    description = $('#about-me .info p'),
    skillList = $('#about-me .info ul'),
    header = $('.profile-header');
 
-  const tl = new TimelineLite();
+  const tl = new TimelineLite( {paused: true});
 
-  tl.fromTo(header, 0.25, {y: -44, ease: Power2.easeOut}, {y:0, ease: Power2.easeOut})
-  .fromTo(triangleOne, 1, {rotation: '180_cw', transformOrigin: 'center', ease: Elastic.easeOut}, {rotation: '360_cw', transformOrigin: 'center', ease: Elastic.easeOut},"-=0.25")
+  tl.fromTo(triangleOne, 1, {rotation: '180_cw', transformOrigin: 'center', ease: Elastic.easeOut}, {rotation: '360_cw', transformOrigin: 'center', ease: Elastic.easeOut},"-=0.25")
   .fromTo(triangleTwo, 1, {rotation: '180_ccw',transformOrigin: 'center',ease: Elastic.easeOut }, {rotation: '360_ccw',transformOrigin: 'center',ease: Elastic.easeOut }, "-=1")
-  .fromTo(polyart, { duration: .15, scale: 0.5, y: 40, opacity: 0, filter: 'blur(5px)', ease: "Elastic.easeOut",stagger: {grid: "auto",from: "edges",ease: "Elastic.easeOut",amount: 1.5}}, { duration: .15, scale: 1, y: 40, opacity: 1, filter: 'blur(0px)', ease: "Elastic.easeOut", stagger: { grid: "auto", from: "edges", ease: "Elastic.easeOut", amount: 1.5 }})
+  .fromTo(profileImg, 1, {opacity: 0, ease: Power2.easeOut}, {opacity: 1, ease: Power2.easeOut}, '-=1')
   .fromTo(circleOne, 0.5, {x: 70,y: -100,opacity: 0, ease: Elastic.easeOut}, {x: 0,y: 0,opacity: 1, ease: Elastic.easeOut}, "-=0.5")
   .fromTo(circleTwo, 0.5, {x: -80,y: 50,opacity: 0, ease: Elastic.easeOut}, {x: 0,y: 0,opacity: 1, ease: Elastic.easeOut}, "-=0.5")
   .fromTo(circleThree, 0.5, {x: -40,y: 70,opacity: 0, ease: Elastic.easeOut}, {x: 0,y: 0,opacity: 1, ease: Elastic.easeOut}, "-=0.5")
@@ -242,6 +243,6 @@ $(document).ready(function () {
   .fromTo(description, 0.5, {x: 100,opacity: 0, ease: Power2.easeOut}, {x: 0,opacity: 1, ease: Power2.easeOut})
   .fromTo(skillList, 0.5, {x: 100,opacity: 0, ease: Power2.easeOut}, {x: 0,opacity: 1, ease: Power2.easeOut});
 
-  // tl.play();
+  tl.play();
 
 });

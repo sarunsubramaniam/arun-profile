@@ -1,240 +1,266 @@
 [
+  {
+      "image": "appearance",
+      "cls": "micro-interactions",
+      "title": "Appearance Toggle",
+      "category": "Micro Interactions",
+      "tools":  "Figma",
+      "type": "gif"
+    },
+    {
+      "image": "layout",
+      "cls": "micro-interactions",
+      "title": "Layout Toggle",
+      "category": "Micro Interactions",
+      "tools":  "Figma",
+      "type": "gif"
+    },
     {
       "image": "protectt",
-      "cls": "logo",
+      "cls": "branding",
       "title": "Protectt.ai",
-      "category": "Logo",
-      "tools":  "Illustrator"
+      "category": "Branding",
+      "tools":  "Illustrator",
+      "type": "png"
     },
     {
       "image": "dividend",
-      "cls": "logo",
+      "cls": "branding",
       "title": "Dividend",
-      "category": "Logo",
-      "tools": "Illustrator"
+      "category": "Branding",
+      "tools": "Illustrator",
+      "type": "png"
     },
     {
       "image": "shopr",
-      "cls": "logo",
+      "cls": "branding",
       "title": "CoShopr",
-      "category": "Logo",
-      "tools": "Illustrator"
+      "category": "Branding",
+      "tools": "Illustrator",
+      "type": "png"
     },
     {
       "image": "taliaferro",
-      "cls": "logo",
+      "cls": "branding",
       "title": "Taliaferro",
-      "category": "Logo",
-      "tools": "Illustrator"
+      "category": "Branding",
+      "tools": "Illustrator",
+      "type": "png"
     },
     {
       "image": "arithmetic-lab",
-      "cls": "logo",
+      "cls": "branding",
       "title": "Arithmetic Lab",
-      "category": "Logo",
-      "tools": "Illustrator"
+      "category": "Branding",
+      "tools": "Illustrator",
+      "type": "png"
     },
     {
       "image": "lead-faucet",
-      "cls": "logo",
+      "cls": "branding",
       "title": "Lead Faucet",
-      "category": "Logo",
-      "tools": "Illustrator"
+      "category": "Branding",
+      "tools": "Illustrator",
+      "type": "png"
     },
     {
       "image": "two-doors-down",
-      "cls": "logo",
+      "cls": "branding",
       "title": "Two Doors Down",
-      "category": "Logo",
-      "tools": "Illustrator"
+      "category": "Branding",
+      "tools": "Illustrator",
+      "type": "png"
     },
     {
       "image": "social-wallet",
-      "cls": "logo",
+      "cls": "branding",
       "title": "Social Wallet",
-      "category": "Logo",
-      "tools": "Illustrator"
+      "category": "Branding",
+      "tools": "Illustrator",
+      "type": "png"
     },
     {
       "image": "all-natural-life",
-      "cls": "logo",
+      "cls": "branding",
       "title": "All Natural Wallet",
-      "category": "Logo",
-      "tools": "Illustrator"
+      "category": "Branding",
+      "tools": "Illustrator",
+      "type": "png"
     },
     {
       "image": "wolf-head",
-      "cls": "logo",
+      "cls": "branding",
       "title": "Wolf Head",
-      "category": "Logo",
-      "tools": "Illustrator"
+      "category": "Branding",
+      "tools": "Illustrator",
+      "type": "png"
     },
     {
       "image": "solvent",
-      "cls": "logo",
+      "cls": "branding",
       "title": "Solvent",
-      "category": "Logo",
-      "tools": "Illustrator"
+      "category": "Branding",
+      "tools": "Illustrator",
+      "type": "png"
     },
     {
       "image": "daveys",
-      "cls": "logo",
+      "cls": "branding",
       "title": "Daveys",
-      "category": "Logo",
-      "tools": "Illustrator"
+      "category": "Branding",
+      "tools": "Illustrator",
+      "type": "png"
     },
     {
       "image": "cantaarte",
-      "cls": "logo",
+      "cls": "branding",
       "title": "Cantaarte",
-      "category": "Logo",
-      "tools": "Illustrator"
+      "category": "Branding",
+      "tools": "Illustrator",
+      "type": "png"
     },
     {
       "image": "payn",
-      "cls": "logo",
+      "cls": "branding",
       "title": "PAYN",
-      "category": "Logo",
-      "tools": "Illustrator"
+      "category": "Branding",
+      "tools": "Illustrator",
+      "type": "png"
     },
     {
       "image": "spiralverse",
-      "cls": "logo",
+      "cls": "branding",
       "title": "Spiral Verse",
-      "category": "Logo",
-      "tools": "Illustrator"
+      "category": "Branding",
+      "tools": "Illustrator",
+      "type": "png"
     },
     {
       "image": "meerea",
-      "cls": "logo",
+      "cls": "branding",
       "title": "Meerea",
-      "category": "Logo",
-      "tools": "Illustrator"
+      "category": "Branding",
+      "tools": "Illustrator",
+      "type": "png"
     },
     {
       "image": "digital-art-jobs",
       "cls": "digital",
       "title": "Steve Jobs",
       "category": "Digital Art",
-      "tools": "Photoshop, Wacom Tablet"
+      "tools": "Photoshop, Wacom Tablet",
+      "type": "png"
     },
     {
       "image": "scribble-art-dhanush",
       "cls": "digital",
       "title": "Dhanush",
       "category": "Digital Art",
-      "tools": "Procreate, Digital Stylus"
+      "tools": "Procreate, Digital Stylus",
+      "type": "png"
     },
     {
       "image": "digital-art-nikhil",
       "cls": "digital",
       "title": "Kids' Digital Painting",
       "category": "Digital Art",
-      "tools": "Infinite Painter, S Pen"
+      "tools": "Infinite Painter, S Pen",
+      "type": "png"
     },
     {
       "image": "digital-art-kingfisher",
       "cls": "digital",
       "title": "Kingfisher",
       "category": "Digital Art",
-      "tools": "Infinite Painter, S Pen"
+      "tools": "Infinite Painter, S Pen",
+      "type": "png"
     },
     {
       "image": "digital-art-landscape",
       "cls": "digital",
       "title": "Landscape",
       "category": "Digital Art",
-      "tools": "Infinite Painter, S Pen"
+      "tools": "Infinite Painter, S Pen",
+      "type": "png"
     },
     {
       "image": "poly-art-lionking",
       "cls": "digital",
       "title": "Lion King Poly Art",
       "category": "Digital Art",
-      "tools": "Illustrator"
+      "tools": "Illustrator",
+      "type": "png"
     },
     {
       "image": "Ganesh",
       "cls": "digital",
       "title": "Ganesh",
       "category": "Digital Art",
-      "tools": "Procreate, Apple Pencil"
+      "tools": "Procreate, Apple Pencil",
+      "type": "png"
     },
     {
       "image": "charlie-chaplin",
       "cls": "sketch",
       "title": "Charlie Chaplin",
       "category": "Sketch",
-      "tools": "2B, 8B Pencil"
+      "tools": "2B, 8B Pencil",
+      "type": "png"
     },
     {
       "image": "sachin",
       "cls": "sketch",
       "title": "Sachin Tendulkar",
       "category": "Sketch",
-      "tools": "2B, 6B Pencil"
+      "tools": "2B, 6B Pencil",
+      "type": "png"
     },
     {
       "image": "nikhilesh",
       "cls": "sketch",
       "title": "Kids' Portrait",
       "category": "Sketch",
-      "tools": "2B, 4B Pencil"
+      "tools": "2B, 4B Pencil",
+      "type": "png"
     },
     {
       "image": "rishanth",
       "cls": "sketch",
       "title": "Kids' Portrait",
       "category": "Sketch",
-      "tools": "2B, 4B Pencil"
+      "tools": "2B, 4B Pencil",
+      "type": "png"
     },
     {
       "image": "kid-1",
       "cls": "sketch",
       "title": "Kids' Portrait",
       "category": "Sketch",
-      "tools": "2B, 4B Pencil"
+      "tools": "2B, 4B Pencil",
+      "type": "png"
     },
     {
       "image": "rajinikanth",
       "cls": "sketch",
       "title": "Rajinikanth",
       "category": "Sketch",
-      "tools": "2B, 4B Pencil"
+      "tools": "2B, 4B Pencil",
+      "type": "png"
     },
     {
       "image": "kohli",
       "cls": "sketch",
       "title": "Virat Kohli",
       "category": "Sketch",
-      "tools": "2B, 8B Pencil"
+      "tools": "2B, 8B Pencil",
+      "type": "png"
     },
     {
       "image": "sketch-steve-jobs",
       "cls": "sketch",
       "title": "Steve Jobs",
       "category": "Sketch",
-      "tools": "2B, 8B Pencil"
-    },
-    {
-      "image": "socially",
-      "cls": "prototype",
-      "title": "Socially",
-      "category": "Prototype",
-      "tools": "Adobe XD"
-    },
-    {
-      "image": "socially-login",
-      "cls": "prototype",
-      "title": "Socially",
-      "category": "Prototype",
-      "tools": "Adobe XD"
-    },
-    {
-      "image": "messenger",
-      "cls": "prototype",
-      "title": "Messenger",
-      "category": "Prototype",
-      "tools": "Adobe XD"
+      "tools": "2B, 8B Pencil",
+      "type": "png"
     }
   ]
