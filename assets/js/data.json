@@ -144,6 +144,22 @@
       "type": "png"
     },
     {
+      "image": "Ganesh",
+      "cls": "digital",
+      "title": "Ganesh",
+      "category": "Digital Art",
+      "tools": "Procreate, Apple Pencil",
+      "type": "png"
+    },
+    {
+      "image": "buddha",
+      "cls": "digital",
+      "title": "Buddha",
+      "category": "Digital Art",
+      "tools": "Procreate, Apple Pencil",
+      "type": "png"
+    },
+    {
       "image": "digital-art-jobs",
       "cls": "digital",
       "title": "Steve Jobs",
@@ -189,14 +205,6 @@
       "title": "Lion King Poly Art",
       "category": "Digital Art",
       "tools": "Illustrator",
-      "type": "png"
-    },
-    {
-      "image": "Ganesh",
-      "cls": "digital",
-      "title": "Ganesh",
-      "category": "Digital Art",
-      "tools": "Procreate, Apple Pencil",
       "type": "png"
     },
     {

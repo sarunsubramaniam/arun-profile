@@ -117,7 +117,7 @@ body {
                     // border: 1px solid #1d1d1f;
                     // color: #1d1d1f;
 
-                    $skills: ("ps": #2cc2f8, "ai": #f47900, "xd": #804670, "figma": #f76e5e, "sketchbook": #dd5636, "procreate": #da1852, "html": #eb6227, "css": #27a4da, "js": #ccbb43);
+                    $skills: ("ps": #2cc2f8, "ai": #f47900, "vc": #6b6cf0, "xd": #804670, "figma": #f76e5e, "sketchbook": #dd5636, "procreate": #da1852, "html": #eb6227, "css": #27a4da, "js": #ccbb43);
 
                     @each $skill,
                     $color in $skills {

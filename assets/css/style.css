@@ -495,6 +495,11 @@ h1 {
   border: 1px solid #f47900;
 }
 
+.about-me .info ul.skill li.vc {
+  color: #6b6cf0;
+  border: 1px solid #6b6cf0;
+}
+
 .about-me .info ul.skill li.xd {
   color: #804670;
   border: 1px solid #804670;
@@ -583,6 +588,11 @@ h1 {
 .portfolio-section .info ul.skill li.ai {
   color: #f47900;
   border: 1px solid #f47900;
+}
+
+.portfolio-section .info ul.skill li.vc {
+  color: #6b6cf0;
+  border: 1px solid #6b6cf0;
 }
 
 .portfolio-section .info ul.skill li.xd {
