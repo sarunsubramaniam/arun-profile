@@ -16,6 +16,14 @@
       "type": "gif"
     },
     {
+      "image": "hamburger",
+      "cls": "micro-interactions",
+      "title": "Hamburger",
+      "category": "Micro Interactions",
+      "tools":  "Figma",
+      "type": "gif"
+    },
+    {
       "image": "protectt",
       "cls": "branding",
       "title": "Protectt.ai",
