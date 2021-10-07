@@ -16,6 +16,14 @@
       "type": "gif"
     },
     {
+      "image": "process",
+      "cls": "micro-interactions",
+      "title": "Developement Process Section",
+      "category": "Micro Interactions",
+      "tools":  "Figma",
+      "type": "gif"
+    },
+    {
       "image": "hamburger",
       "cls": "micro-interactions",
       "title": "Hamburger",
