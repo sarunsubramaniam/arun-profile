@@ -20,7 +20,39 @@
       "cls": "micro-interactions",
       "title": "Software Developement Process",
       "category": "Micro Interactions",
+      "tools":  "Illustrator, Figma",
+      "type": "gif"
+    },
+    {
+      "image": "transparency",
+      "cls": "micro-interactions",
+      "title": "Transparency",
+      "category": "Micro Interactions",
+      "tools":  "Illustrator, Figma",
+      "type": "gif"
+    },
+    {
+      "image": "search",
+      "cls": "micro-interactions",
+      "title": "Search",
+      "category": "Micro Interactions",
       "tools":  "Figma",
+      "type": "gif"
+    },
+    {
+      "image": "gamification",
+      "cls": "micro-interactions",
+      "title": "Gamification",
+      "category": "Micro Interactions",
+      "tools":  "Figma",
+      "type": "gif"
+    },
+    {
+      "image": "pricing",
+      "cls": "micro-interactions",
+      "title": "Pricing",
+      "category": "Micro Interactions",
+      "tools":  "Illustrator, Figma",
       "type": "gif"
     },
     {
