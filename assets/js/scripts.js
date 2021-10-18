@@ -210,7 +210,7 @@ $(document).ready(function () {
     let scrollTarget = $(this).attr('data-scroll');
     $('html, body').animate({
       scrollTop: $(`#${scrollTarget}`).offset().top
-    }, 500);
+    }, 500);``
   });
 
   // const triangleOne = $('.triangleOne'),

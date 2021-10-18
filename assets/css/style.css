@@ -547,7 +547,7 @@ h1 {
 
 .about-me .info h1 {
   position: initial;
-  margin-left: 120px;
+  margin-top: 120px;
 }
 
 .about-me .info h1:before {
@@ -559,7 +559,10 @@ h1 {
   content: '';
   width: 100px;
   height: 100px;
+  top: 30px;
   left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 
 .portfolio-section {
@@ -1001,6 +1004,15 @@ h1 {
     -webkit-box-ordinal-group: 1;
         -ms-flex-order: 0;
             order: 0;
+  }
+  .about-me .info h1 {
+    margin-left: 120px;
+  }
+  .about-me .info h1:before {
+    left: 0;
+    top: initial;
+    right: initial;
+    margin: initial;
   }
   #bottom-drawer {
     display: none;

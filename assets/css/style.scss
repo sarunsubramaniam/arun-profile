@@ -438,7 +438,7 @@ h1 {
         position: relative;
         h1 {
             position: initial;
-            margin-left: 120px;
+            margin-top: 120px;
             &:before {
                 background: url("../images/portrait-light.png");
                 background-size: auto;
@@ -448,7 +448,10 @@ h1 {
                 content: '';
                 width: 100px;
                 height: 100px;
+                top: 30px;
                 left: 0;
+                right: 0;
+                margin: 0 auto;
             }
         }
     }
@@ -764,6 +767,17 @@ h1 {
             flex-direction: row;
             div[class*="col-"]:first-child {
                 order: 0;
+            }
+        }
+        .info {
+            h1 {
+                margin-left: 120px;
+                &:before {
+                    left: 0;
+                    top: initial;
+                    right: initial;
+                    margin: initial;
+                }
             }
         }
     }
