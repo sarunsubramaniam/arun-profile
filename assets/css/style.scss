@@ -528,8 +528,8 @@ h1 {
                 transform: scale(0);
 
                 &.active {
-                    flex-basis: 100%;
-                    max-width: 100%;
+                    flex-basis: 50%;
+                    max-width: 50%;
                     transform: scale(1);
                     opacity: 1;
                 }
