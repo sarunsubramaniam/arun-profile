@@ -213,36 +213,36 @@ $(document).ready(function () {
     }, 500);
   });
 
-  const triangleOne = $('.triangleOne'),
-   triangleTwo = $('.triangleTwo'),
-   circleOne = $('.circleOne'),
-   circleTwo = $('.circleTwo'),
-   circleThree = $('.circleThree'),
-   circleFour = $('.circleFour'),
-   triangleSmall = $('.triangleSmall'),
-   artworkWrapper = $('.artworkWrapper'),
-   polyart = $('.polyart *'),
-   profileImg = $('.embedded-img'),
-   greeting = $('#about-me .info h1'),
-   description = $('#about-me .info p'),
-   skillList = $('#about-me .info ul'),
-   header = $('.profile-header');
+  // const triangleOne = $('.triangleOne'),
+  //  triangleTwo = $('.triangleTwo'),
+  //  circleOne = $('.circleOne'),
+  //  circleTwo = $('.circleTwo'),
+  //  circleThree = $('.circleThree'),
+  //  circleFour = $('.circleFour'),
+  //  triangleSmall = $('.triangleSmall'),
+  //  artworkWrapper = $('.artworkWrapper'),
+  //  polyart = $('.polyart *'),
+  //  profileImg = $('.embedded-img'),
+  //  greeting = $('#about-me .info h1'),
+  //  description = $('#about-me .info p'),
+  //  skillList = $('#about-me .info ul'),
+  //  header = $('.profile-header');
 
-  const tl = new TimelineLite( {paused: true});
+  // const tl = new TimelineLite( {paused: true});
 
-  tl.fromTo(triangleOne, 1, {rotation: '180_cw', transformOrigin: 'center', ease: Elastic.easeOut}, {rotation: '360_cw', transformOrigin: 'center', ease: Elastic.easeOut},"-=0.25")
-  .fromTo(triangleTwo, 1, {rotation: '180_ccw',transformOrigin: 'center',ease: Elastic.easeOut }, {rotation: '360_ccw',transformOrigin: 'center',ease: Elastic.easeOut }, "-=1")
-  .fromTo(profileImg, 1, {opacity: 0, ease: Power2.easeOut}, {opacity: 1, ease: Power2.easeOut}, '-=1')
-  .fromTo(circleOne, 0.5, {x: 70,y: -100,opacity: 0, ease: Elastic.easeOut}, {x: 0,y: 0,opacity: 1, ease: Elastic.easeOut}, "-=0.5")
-  .fromTo(circleTwo, 0.5, {x: -80,y: 50,opacity: 0, ease: Elastic.easeOut}, {x: 0,y: 0,opacity: 1, ease: Elastic.easeOut}, "-=0.5")
-  .fromTo(circleThree, 0.5, {x: -40,y: 70,opacity: 0, ease: Elastic.easeOut}, {x: 0,y: 0,opacity: 1, ease: Elastic.easeOut}, "-=0.5")
-  .fromTo(circleFour, 0.5, {x: -40,y: -110,opacity: 0, ease: Elastic.easeOut}, {x: 0,y: 0,opacity: 1, ease: Elastic.easeOut}, "-=0.5")
-  .fromTo(triangleSmall, 0.5, {x: 100,y: 80,opacity: 0, ease: Elastic.easeOut}, {x: 0,y: 0,opacity: 1, ease: Elastic.easeOut}, "-=0.5")
-  .to(artworkWrapper, 0.25, {x: 0, y: 0, ease: Back.easeOut})
-  .fromTo(greeting, 0.5, {x: 100,opacity: 0, ease: Power2.easeOut}, {x: 0,opacity: 1, ease: Power2.easeOut})
-  .fromTo(description, 0.5, {x: 100,opacity: 0, ease: Power2.easeOut}, {x: 0,opacity: 1, ease: Power2.easeOut})
-  .fromTo(skillList, 0.5, {x: 100,opacity: 0, ease: Power2.easeOut}, {x: 0,opacity: 1, ease: Power2.easeOut});
+  // tl.fromTo(triangleOne, 1, {rotation: '180_cw', transformOrigin: 'center', ease: Elastic.easeOut}, {rotation: '360_cw', transformOrigin: 'center', ease: Elastic.easeOut},"-=0.25")
+  // .fromTo(triangleTwo, 1, {rotation: '180_ccw',transformOrigin: 'center',ease: Elastic.easeOut }, {rotation: '360_ccw',transformOrigin: 'center',ease: Elastic.easeOut }, "-=1")
+  // .fromTo(profileImg, 1, {opacity: 0, ease: Power2.easeOut}, {opacity: 1, ease: Power2.easeOut}, '-=1')
+  // .fromTo(circleOne, 0.5, {x: 70,y: -100,opacity: 0, ease: Elastic.easeOut}, {x: 0,y: 0,opacity: 1, ease: Elastic.easeOut}, "-=0.5")
+  // .fromTo(circleTwo, 0.5, {x: -80,y: 50,opacity: 0, ease: Elastic.easeOut}, {x: 0,y: 0,opacity: 1, ease: Elastic.easeOut}, "-=0.5")
+  // .fromTo(circleThree, 0.5, {x: -40,y: 70,opacity: 0, ease: Elastic.easeOut}, {x: 0,y: 0,opacity: 1, ease: Elastic.easeOut}, "-=0.5")
+  // .fromTo(circleFour, 0.5, {x: -40,y: -110,opacity: 0, ease: Elastic.easeOut}, {x: 0,y: 0,opacity: 1, ease: Elastic.easeOut}, "-=0.5")
+  // .fromTo(triangleSmall, 0.5, {x: 100,y: 80,opacity: 0, ease: Elastic.easeOut}, {x: 0,y: 0,opacity: 1, ease: Elastic.easeOut}, "-=0.5")
+  // .to(artworkWrapper, 0.25, {x: 0, y: 0, ease: Back.easeOut})
+  // .fromTo(greeting, 0.5, {x: 100,opacity: 0, ease: Power2.easeOut}, {x: 0,opacity: 1, ease: Power2.easeOut})
+  // .fromTo(description, 0.5, {x: 100,opacity: 0, ease: Power2.easeOut}, {x: 0,opacity: 1, ease: Power2.easeOut})
+  // .fromTo(skillList, 0.5, {x: 100,opacity: 0, ease: Power2.easeOut}, {x: 0,opacity: 1, ease: Power2.easeOut});
 
-  tl.play();
+  // tl.play();
 
 });

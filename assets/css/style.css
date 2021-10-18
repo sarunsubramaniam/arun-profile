@@ -104,7 +104,7 @@ svg:not(:root) {
 
 .triangleOne,
 .circleFour {
-  fill: #e39807 !important;
+  fill: #fdbe00 !important;
 }
 
 .circleOne {
@@ -120,12 +120,18 @@ svg:not(:root) {
 }
 
 .embedded-img image {
-  width: 80%;
-  -webkit-transform: translate(80px, 60px);
-          transform: translate(80px, 60px);
+  width: 100%;
+  -webkit-transform: translate(15px, 70px);
+          transform: translate(15px, 70px);
+}
+
+.profile-img img {
+  width: 75%;
+  margin-left: auto;
 }
 
 .artworkWrapper {
+  display: none;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
 }
@@ -463,7 +469,7 @@ h1 {
 
 .about-me .info h1 span {
   font-weight: 700;
-  color: #e39807;
+  color: #fcbe00;
 }
 
 .about-me .info p {
@@ -535,6 +541,27 @@ h1 {
   border: 1px solid #ccbb43;
 }
 
+.about-me .info {
+  position: relative;
+}
+
+.about-me .info h1 {
+  position: initial;
+  margin-left: 120px;
+}
+
+.about-me .info h1:before {
+  background: url("../images/portrait-light.png");
+  background-size: auto;
+  display: block;
+  position: absolute;
+  background-size: cover;
+  content: '';
+  width: 100px;
+  height: 100px;
+  left: 0;
+}
+
 .portfolio-section {
   padding: 45px 15px 0;
   background: #f8f8f9;
@@ -558,7 +585,7 @@ h1 {
 
 .portfolio-section .info h1 span {
   font-weight: 700;
-  color: #e39807;
+  color: #fcbe00;
 }
 
 .portfolio-section .info p {

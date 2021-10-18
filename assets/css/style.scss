@@ -90,7 +90,7 @@ body {
 
             span {
                 font-weight: 700;
-                color: #e39807;
+                color: #fcbe00;
                 // background-clip: text;
                 // background-image: linear-gradient(90deg, rgb(237, 24, 106) 0%, rgb(255, 103, 0) 100%, rgb(255, 203, 57) 200%, rgb(29, 29, 31) 300%);
                 // -webkit-text-fill-color: transparent;
@@ -169,7 +169,7 @@ svg:not(:root) {
 
 .triangleOne,
 .circleFour {
-    fill: #e39807 !important;
+    fill: #fdbe00 !important;
 }
 
 .circleOne {
@@ -186,12 +186,18 @@ svg:not(:root) {
 
 
 .embedded-img image{
-    width: 80%;
-    transform: translate(80px, 60px);
+    width: 100%;
+    transform: translate(15px, 70px);
+}
+
+.profile-img img{
+    width: 75%;
+    margin-left: auto;
 }
 
 
 .artworkWrapper {
+    display: none;
     transform: translate(-50%, 0);
 }
 
@@ -426,7 +432,26 @@ h1 {
         }
     }
 
-    @include info
+    @include info;
+
+    .info {
+        position: relative;
+        h1 {
+            position: initial;
+            margin-left: 120px;
+            &:before {
+                background: url("../images/portrait-light.png");
+                background-size: auto;
+                display: block;
+                position: absolute;
+                background-size: cover;
+                content: '';
+                width: 100px;
+                height: 100px;
+                left: 0;
+            }
+        }
+    }
 }
 
 .portfolio-section {
@@ -437,7 +462,7 @@ h1 {
         display: inline-block;
     }
 
-    @include info
+    @include info;
 }
 
 .filter {
