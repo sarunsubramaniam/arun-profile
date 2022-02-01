@@ -120,6 +120,86 @@
       "type": "png"
     },
     {
+      "image": "tent-portal",
+      "cls": "branding",
+      "title": "Tent Portal",
+      "category": "Branding",
+      "tools": "Illustrator",
+      "type": "png"
+    },
+    {
+      "image": "saypeace",
+      "cls": "branding",
+      "title": "Say Peace",
+      "category": "Branding",
+      "tools": "Illustrator",
+      "type": "png"
+    },
+    {
+      "image": "rid",
+      "cls": "branding",
+      "title": "RÉSEAU-IMMO-DIFFUSION",
+      "category": "Branding",
+      "tools": "Illustrator",
+      "type": "png"
+    },
+    {
+      "image": "sot",
+      "cls": "branding",
+      "title": "Seasons of Tokyo",
+      "category": "Branding",
+      "tools": "Illustrator",
+      "type": "png"
+    },
+    {
+      "image": "cashout",
+      "cls": "branding",
+      "title": "CashoutAU.com",
+      "category": "Branding",
+      "tools": "Illustrator",
+      "type": "png"
+    },
+    {
+      "image": "rdp-arena",
+      "cls": "branding",
+      "title": "RDP Arena",
+      "category": "Branding",
+      "tools": "Illustrator",
+      "type": "png"
+    },
+    {
+      "image": "printer-toner",
+      "cls": "branding",
+      "title": "Printer Toner",
+      "category": "Branding",
+      "tools": "Illustrator",
+      "type": "png"
+    },
+    {
+      "image": "eskape",
+      "cls": "branding",
+      "title": "Eskape Realty",
+      "category": "Branding",
+      "tools": "Illustrator",
+      "type": "png"
+    },
+    {
+      "image": "macoo",
+      "cls": "branding",
+      "title": "Macoo Beauty",
+      "category": "Branding",
+      "tools": "Illustrator",
+      "type": "png"
+    },
+    {
+      "image": "greg-nicholaysen",
+      "cls": "branding",
+      "title": "Greg Nicholaysen",
+      "category": "Branding",
+      "tools": "Illustrator",
+      "type": "png"
+    },
+    {
       "image": "solvent",
       "cls": "branding",
       "title": "Solvent",
@@ -128,9 +208,33 @@
       "type": "png"
     },
     {
+      "image": "mark-sladky",
+      "cls": "branding",
+      "title": "Mark Sladky",
+      "category": "Branding",
+      "tools": "Illustrator",
+      "type": "png"
+    },
+    {
+      "image": "fp",
+      "cls": "branding",
+      "title": "Football Pesalaam",
+      "category": "Branding",
+      "tools": "Illustrator",
+      "type": "png"
+    },
+    {
       "image": "daveys",
       "cls": "branding",
       "title": "Daveys",
+      "category": "Branding",
+      "tools": "Illustrator",
+      "type": "png"
+    },
+    {
+      "image": "meerea",
+      "cls": "branding",
+      "title": "Meerea",
       "category": "Branding",
       "tools": "Illustrator",
       "type": "png"
@@ -151,22 +255,7 @@
       "tools": "Illustrator",
       "type": "png"
     },
-    {
-      "image": "spiralverse",
-      "cls": "branding",
-      "title": "Spiral Verse",
-      "category": "Branding",
-      "tools": "Illustrator",
-      "type": "png"
-    },
-    {
-      "image": "meerea",
-      "cls": "branding",
-      "title": "Meerea",
-      "category": "Branding",
-      "tools": "Illustrator",
-      "type": "png"
-    },
+    
     {
       "image": "rahman",
       "cls": "typography",
