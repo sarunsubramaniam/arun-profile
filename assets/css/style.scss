@@ -355,6 +355,26 @@ svg:not(:root) {
     }
 }
 
+.download-btn {
+    margin: 20px auto;
+    a {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        text-decoration: none;
+        background: #0071e3;
+        border-radius: 15px;
+        height: 30px;
+        padding: 15px;
+        border: 1px solid #0071e3;
+        i {
+            font-weight: bolder;
+            margin-left: 10px;
+        }
+    }
+}
+
 .header-offset {
     height: 78px;
 }
