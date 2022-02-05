@@ -26,7 +26,7 @@ $(document).ready(function () {
   }
 
   $.getJSON("assets/js/data.json", function (data) {
-    shuffle(data);
+    // shuffle(data);
     Object.entries(data).forEach(([key, value]) => {
       $('#image-gallery .row').append(`<div class="all ${value.cls} image active">
           <div class="img-wrapper">
