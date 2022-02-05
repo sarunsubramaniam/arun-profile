@@ -112,9 +112,9 @@
       "type": "png"
     },
     {
-      "image": "wolf-head",
+      "image": "saypeace-01",
       "cls": "branding",
-      "title": "Wolf Head",
+      "title": "Say Peace",
       "category": "Branding",
       "tools": "Illustrator",
       "type": "png"
@@ -128,7 +128,15 @@
       "type": "png"
     },
     {
-      "image": "saypeace",
+      "image": "wolf-head",
+      "cls": "branding",
+      "title": "Wolf Head",
+      "category": "Branding",
+      "tools": "Illustrator",
+      "type": "png"
+    },
+    {
+      "image": "saypeace-02",
       "cls": "branding",
       "title": "Say Peace",
       "category": "Branding",
