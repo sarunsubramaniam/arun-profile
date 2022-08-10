@@ -620,9 +620,10 @@ h1 {
 }
 
 .about-me .info p {
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 300;
   padding-top: 15px;
+  line-height: 1.25em;
 }
 
 .about-me .info ul.skill {
@@ -739,9 +740,10 @@ h1 {
 }
 
 .portfolio-section .info p {
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 300;
   padding-top: 15px;
+  line-height: 1.25em;
 }
 
 .portfolio-section .info ul.skill {
