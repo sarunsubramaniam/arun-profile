@@ -1,7 +1,6 @@
 [
   {
       "image": "appearance",
-      "cls": "micro-interactions",
       "title": "Appearance Toggle",
       "category": "Micro Interactions",
       "tools":  "Figma",
@@ -9,7 +8,6 @@
     },
     {
       "image": "layout",
-      "cls": "micro-interactions",
       "title": "Layout Toggle",
       "category": "Micro Interactions",
       "tools":  "Figma",
@@ -17,7 +15,6 @@
     },
     {
       "image": "process",
-      "cls": "micro-interactions",
       "title": "Software Developement Process",
       "category": "Micro Interactions",
       "tools":  "Illustrator, Figma",
@@ -25,7 +22,6 @@
     },
     {
       "image": "icons",
-      "cls": "micro-interactions",
       "title": "Icons",
       "category": "Micro Interactions",
       "tools":  "Illustrator, Figma",
@@ -33,7 +29,6 @@
     },
     {
       "image": "hamburger",
-      "cls": "micro-interactions",
       "title": "Hamburger",
       "category": "Micro Interactions",
       "tools":  "Figma",
@@ -41,15 +36,27 @@
     },
     {
       "image": "protectt",
-      "cls": "branding",
       "title": "Protectt.ai",
       "category": "Branding",
       "tools":  "Illustrator",
       "type": "png"
     },
     {
+      "image": "posh-dentistry",
+      "title": "Posh Dentistry",
+      "category": "Branding",
+      "tools":  "Illustrator",
+      "type": "png"
+    },
+    {
+      "image": "nikolas-rockland",
+      "title": "Nikolas Rockland",
+      "category": "Branding",
+      "tools":  "Illustrator",
+      "type": "png"
+    },
+    {
       "image": "dividend",
-      "cls": "branding",
       "title": "Dividend",
       "category": "Branding",
       "tools": "Illustrator",
@@ -57,7 +64,6 @@
     },
     {
       "image": "shopr",
-      "cls": "branding",
       "title": "CoShopr",
       "category": "Branding",
       "tools": "Illustrator",
@@ -65,7 +71,6 @@
     },
     {
       "image": "taliaferro",
-      "cls": "branding",
       "title": "Taliaferro",
       "category": "Branding",
       "tools": "Illustrator",
@@ -73,7 +78,6 @@
     },
     {
       "image": "arithmetic-lab",
-      "cls": "branding",
       "title": "Arithmetic Lab",
       "category": "Branding",
       "tools": "Illustrator",
@@ -81,7 +85,6 @@
     },
     {
       "image": "lead-faucet",
-      "cls": "branding",
       "title": "Lead Faucet",
       "category": "Branding",
       "tools": "Illustrator",
@@ -89,7 +92,6 @@
     },
     {
       "image": "two-doors-down",
-      "cls": "branding",
       "title": "Two Doors Down",
       "category": "Branding",
       "tools": "Illustrator",
@@ -97,7 +99,6 @@
     },
     {
       "image": "social-wallet",
-      "cls": "branding",
       "title": "Social Wallet",
       "category": "Branding",
       "tools": "Illustrator",
@@ -105,7 +106,6 @@
     },
     {
       "image": "all-natural-life",
-      "cls": "branding",
       "title": "All Natural Wallet",
       "category": "Branding",
       "tools": "Illustrator",
@@ -113,7 +113,6 @@
     },
     {
       "image": "saypeace-01",
-      "cls": "branding",
       "title": "Say Peace",
       "category": "Branding",
       "tools": "Illustrator",
@@ -121,7 +120,6 @@
     },
     {
       "image": "tent-portal",
-      "cls": "branding",
       "title": "Tent Portal",
       "category": "Branding",
       "tools": "Illustrator",
@@ -129,7 +127,6 @@
     },
     {
       "image": "wolf-head",
-      "cls": "branding",
       "title": "Wolf Head",
       "category": "Branding",
       "tools": "Illustrator",
@@ -137,7 +134,6 @@
     },
     {
       "image": "saypeace-02",
-      "cls": "branding",
       "title": "Say Peace",
       "category": "Branding",
       "tools": "Illustrator",
@@ -145,7 +141,6 @@
     },
     {
       "image": "rid",
-      "cls": "branding",
       "title": "RÉSEAU-IMMO-DIFFUSION",
       "category": "Branding",
       "tools": "Illustrator",
@@ -153,7 +148,6 @@
     },
     {
       "image": "sot",
-      "cls": "branding",
       "title": "Seasons of Tokyo",
       "category": "Branding",
       "tools": "Illustrator",
@@ -161,7 +155,6 @@
     },
     {
       "image": "cashout",
-      "cls": "branding",
       "title": "CashoutAU.com",
       "category": "Branding",
       "tools": "Illustrator",
@@ -169,7 +162,6 @@
     },
     {
       "image": "rdp-arena",
-      "cls": "branding",
       "title": "RDP Arena",
       "category": "Branding",
       "tools": "Illustrator",
@@ -177,7 +169,6 @@
     },
     {
       "image": "printer-toner",
-      "cls": "branding",
       "title": "Printer Toner",
       "category": "Branding",
       "tools": "Illustrator",
@@ -185,7 +176,6 @@
     },
     {
       "image": "eskape",
-      "cls": "branding",
       "title": "Eskape Realty",
       "category": "Branding",
       "tools": "Illustrator",
@@ -193,7 +183,6 @@
     },
     {
       "image": "macoo",
-      "cls": "branding",
       "title": "Macoo Beauty",
       "category": "Branding",
       "tools": "Illustrator",
@@ -201,7 +190,6 @@
     },
     {
       "image": "greg-nicholaysen",
-      "cls": "branding",
       "title": "Greg Nicholaysen",
       "category": "Branding",
       "tools": "Illustrator",
@@ -209,7 +197,6 @@
     },
     {
       "image": "solvent",
-      "cls": "branding",
       "title": "Solvent",
       "category": "Branding",
       "tools": "Illustrator",
@@ -217,7 +204,6 @@
     },
     {
       "image": "mark-sladky",
-      "cls": "branding",
       "title": "Mark Sladky",
       "category": "Branding",
       "tools": "Illustrator",
@@ -225,7 +211,6 @@
     },
     {
       "image": "fp",
-      "cls": "branding",
       "title": "Football Pesalaam",
       "category": "Branding",
       "tools": "Illustrator",
@@ -233,7 +218,6 @@
     },
     {
       "image": "daveys",
-      "cls": "branding",
       "title": "Daveys",
       "category": "Branding",
       "tools": "Illustrator",
@@ -241,7 +225,6 @@
     },
     {
       "image": "meerea",
-      "cls": "branding",
       "title": "Meerea",
       "category": "Branding",
       "tools": "Illustrator",
@@ -249,7 +232,6 @@
     },
     {
       "image": "cantaarte",
-      "cls": "branding",
       "title": "Cantaarte",
       "category": "Branding",
       "tools": "Illustrator",
@@ -257,7 +239,6 @@
     },
     {
       "image": "payn",
-      "cls": "branding",
       "title": "PAYN",
       "category": "Branding",
       "tools": "Illustrator",
@@ -266,7 +247,6 @@
     
     {
       "image": "rahman",
-      "cls": "typography",
       "title": "AR Rahman",
       "category": "Typography",
       "tools": "Vectornator",
@@ -274,7 +254,6 @@
     },
     {
       "image": "Ganesh",
-      "cls": "digital",
       "title": "Ganesh",
       "category": "Digital Art",
       "tools": "Procreate, Apple Pencil",
@@ -282,7 +261,6 @@
     },
     {
       "image": "buddha",
-      "cls": "digital",
       "title": "Buddha",
       "category": "Digital Art",
       "tools": "Procreate, Apple Pencil",
@@ -290,7 +268,6 @@
     },
     {
       "image": "digital-art-jobs",
-      "cls": "digital",
       "title": "Steve Jobs",
       "category": "Digital Art",
       "tools": "Photoshop, Wacom Tablet",
@@ -298,7 +275,6 @@
     },
     {
       "image": "scribble-art-dhanush",
-      "cls": "digital",
       "title": "Dhanush",
       "category": "Digital Art",
       "tools": "Procreate, Digital Stylus",
@@ -306,7 +282,6 @@
     },
     {
       "image": "scribble-art-surya",
-      "cls": "digital",
       "title": "Surya",
       "category": "Digital Art",
       "tools": "Procreate, Apple Pencil",
@@ -314,7 +289,6 @@
     },
     {
       "image": "digital-art-nikhil",
-      "cls": "digital",
       "title": "Kids' Digital Painting",
       "category": "Digital Art",
       "tools": "Infinite Painter, S Pen",
@@ -322,7 +296,6 @@
     },
     {
       "image": "digital-art-kingfisher",
-      "cls": "digital",
       "title": "Kingfisher",
       "category": "Digital Art",
       "tools": "Infinite Painter, S Pen",
@@ -330,7 +303,6 @@
     },
     {
       "image": "digital-art-landscape",
-      "cls": "digital",
       "title": "Landscape",
       "category": "Digital Art",
       "tools": "Infinite Painter, S Pen",
@@ -338,15 +310,34 @@
     },
     {
       "image": "poly-art-lionking",
-      "cls": "digital",
-      "title": "Lion King Poly Art",
+      "title": "Lion King - Poly Art",
       "category": "Digital Art",
       "tools": "Illustrator",
       "type": "png"
     },
     {
+      "image": "poly-art-ronaldo",
+      "title": "Ronaldo - Poly Art",
+      "category": "Digital Art",
+      "tools": "Illustrator",
+      "type": "png"
+    },
+    {
+      "image": "poly-art-steve-jobs",
+      "title": "Steve Jobs - Poly Art",
+      "category": "Digital Art",
+      "tools": "Illustrator",
+      "type": "png"
+    },
+    {
+      "image": "poly-art-kohli",
+      "title": "Kohli - Poly Art",
+      "category": "Digital Art",
+      "tools": "Illustrator, Inkscape",
+      "type": "png"
+    },
+    {
       "image": "charlie-chaplin",
-      "cls": "sketch",
       "title": "Charlie Chaplin",
       "category": "Sketch",
       "tools": "2B, 8B Pencil",
@@ -354,7 +345,6 @@
     },
     {
       "image": "sachin",
-      "cls": "sketch",
       "title": "Sachin Tendulkar",
       "category": "Sketch",
       "tools": "2B, 6B Pencil",
@@ -362,7 +352,6 @@
     },
     {
       "image": "nikhilesh",
-      "cls": "sketch",
       "title": "Kids' Portrait",
       "category": "Sketch",
       "tools": "2B, 4B Pencil",
@@ -370,7 +359,6 @@
     },
     {
       "image": "rishanth",
-      "cls": "sketch",
       "title": "Kids' Portrait",
       "category": "Sketch",
       "tools": "2B, 4B Pencil",
@@ -378,7 +366,6 @@
     },
     {
       "image": "kid-1",
-      "cls": "sketch",
       "title": "Kids' Portrait",
       "category": "Sketch",
       "tools": "2B, 4B Pencil",
@@ -386,7 +373,6 @@
     },
     {
       "image": "rajinikanth",
-      "cls": "sketch",
       "title": "Rajinikanth",
       "category": "Sketch",
       "tools": "2B, 4B Pencil",
@@ -394,7 +380,6 @@
     },
     {
       "image": "kohli",
-      "cls": "sketch",
       "title": "Virat Kohli",
       "category": "Sketch",
       "tools": "2B, 8B Pencil",
@@ -402,7 +387,6 @@
     },
     {
       "image": "sketch-steve-jobs",
-      "cls": "sketch",
       "title": "Steve Jobs",
       "category": "Sketch",
       "tools": "2B, 8B Pencil",

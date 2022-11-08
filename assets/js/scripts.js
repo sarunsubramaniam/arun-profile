@@ -28,9 +28,9 @@ $(document).ready(function () {
   $.getJSON("assets/js/data.json", function (data) {
     // shuffle(data);
     Object.entries(data).forEach(([key, value]) => {
-      $('#image-gallery .row').append(`<div class="all ${value.cls} image active">
+      $('#image-gallery .row').append(`<div class="all ${value.category.toLowerCase().replace(" ","-")} image active">
           <div class="img-wrapper">
-          <a href="assets/images/portfolio/${value.image}.${value.type}" data-title="${value.title}" data-category="${value.category}" data-tools="${value.tools}"><img class="img-responsive" src="assets/images/portfolio/${value.image}.${value.type}" ></a>
+          <a href="assets/images/portfolio/${value.image}-min.${value.type}" data-title="${value.title}" data-category="${value.category}" data-tools="${value.tools}"><img class="img-responsive" src="assets/images/portfolio/${value.image}-min.${value.type}" ></a>
           <div class="img-overlay">
             <span>${value.title}</span>
             <h5>${value.category}</h5>
@@ -43,7 +43,7 @@ $(document).ready(function () {
     var $overlay = $('<div id="overlay"></div>');
     var $image = $('<img class="listItem">');
     var $logo = $('<a href="index.html" class="logo"></a>')
-    var $title = $('<div class="project-info"><h4 class="title">Protectt.ai</h4> <h5>Category: <span class="category">Logo</span></h5> <h5>Tools Used: <span class="tools">Illustrator</span></h5></div>');
+    var $title = $('<div class="project-info"><h4 class="title"></h4> <h5>Category: <span class="category"></span></h5> <h5>Tools Used: <span class="tools"></span></h5></div>');
     var $prevButton = $('<div id="prevButton"><i class="lni lni-chevron-left"></i></div>');
     var $nextButton = $('<div id="nextButton"><i class="lni lni-chevron-right"></i></div>');
     var $exitButton = $('<div id="exitButton"><i class="lni lni-close"></i></div>');
