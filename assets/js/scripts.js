@@ -26,8 +26,16 @@ $(document).ready(function () {
   }
 
   $.getJSON("assets/js/data.json", function (data) {
+
+    // const category = Array.from(new Set(data.map(item => item.category)));
+
+    // category.map(item => {
+    //   $('#filter .row .col-lg-12').append(`<span class="" data-item="${item.toLowerCase().replace(" ","-")}">${item}</span>`)
+    // })
+
     // shuffle(data);
     Object.entries(data).forEach(([key, value]) => {
+      
       $('#image-gallery .row').append(`<div class="all ${value.category.toLowerCase().replace(" ","-")} image active">
           <div class="img-wrapper">
           <a href="assets/images/portfolio/${value.image}-min.${value.type}" data-title="${value.title}" data-category="${value.category}" data-tools="${value.tools}"><img class="img-responsive" src="assets/images/portfolio/${value.image}-min.${value.type}" ></a>
@@ -38,6 +46,8 @@ $(document).ready(function () {
           </div>
       </div>`);
     });
+
+    
 
     // Lightbox
     var $overlay = $('<div id="overlay"></div>');
