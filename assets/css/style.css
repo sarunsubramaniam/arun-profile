@@ -652,7 +652,7 @@ h1 {
   padding: 0;
 }
 #gallery #image-gallery {
-  padding: 0;
+  padding: 0 15px;
   overflow: hidden;
   background-color: #F5F5F7;
 }

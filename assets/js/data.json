@@ -1,11 +1,102 @@
 [
   {
-      "image": "appearance",
-      "title": "Appearance Toggle",
-      "category": "Micro Interactions",
-      "tools":  "Figma",
-      "type": "gif"
-    },
+    "image": "chennai",
+    "title": "Chennai - Illustration",
+    "category": "Illustrations",
+    "tools": "Illustrator",
+    "type": "png"
+  },
+  {
+    "image": "rahman-2d",
+    "title": "Rahman - Illustration",
+    "category": "Illustrations",
+    "tools": "Illustrator",
+    "type": "png"
+  },
+  {
+    "image": "msd",
+    "title": "Dhoni - Illustration",
+    "category": "Illustrations",
+    "tools": "Illustrator",
+    "type": "png"
+  },
+  {
+    "image": "vintage_car",
+    "title": "Vintage Car - Illustration",
+    "category": "Illustrations",
+    "tools": "Illustrator",
+    "type": "png"
+  },
+  {
+    "image": "jersey",
+    "title": "Jersey - Illustration",
+    "category": "Illustrations",
+    "tools": "Illustrator",
+    "type": "png"
+  },
+  {
+    "image": "ganesh_2",
+    "title": "Ganesh - Illustration",
+    "category": "Illustrations",
+    "tools": "Illustrator",
+    "type": "png"
+  },
+  {
+    "image": "poly-art-ronaldo",
+    "title": "Ronaldo - Poly Art",
+    "category": "Illustrations",
+    "tools": "Illustrator",
+    "type": "png"
+  },
+  {
+    "image": "ao",
+    "title": "Aayirathil Oruvan - Illustration",
+    "category": "Illustrations",
+    "tools": "Illustrator",
+    "type": "png"
+  },
+  {
+    "image": "poly-art-steve-jobs",
+    "title": "Steve Jobs - Poly Art",
+    "category": "Illustrations",
+    "tools": "Illustrator",
+    "type": "png"
+  },
+  {
+    "image": "budhdha",
+    "title": "Budhdha - Illustration",
+    "category": "Illustrations",
+    "tools": "Illustrator",
+    "type": "png"
+  },
+  {
+    "image": "poly-art-kohli",
+    "title": "Kohli - Poly Art",
+    "category": "Illustrations",
+    "tools": "Illustrator, Inkscape",
+    "type": "png"
+  },
+  {
+    "image": "manjummel_boys",
+    "title": "Manjummel Boys - Illustration",
+    "category": "Illustrations",
+    "tools": "Illustrator",
+    "type": "png"
+  },
+  {
+    "image": "appearance",
+    "title": "Appearance Toggle",
+    "category": "Micro Interactions",
+    "tools":  "Figma",
+    "type": "gif"
+  },
+  {
+    "image": "maanadu",
+    "title": "Maanadu - Illustration",
+    "category": "Illustrations",
+    "tools": "Illustrator",
+    "type": "png"
+  },
     {
       "image": "layout",
       "title": "Layout Toggle",
@@ -308,41 +399,7 @@
       "tools": "Infinite Painter, S Pen",
       "type": "png"
     },
-    {
-      "image": "rahman-2d",
-      "title": "Rahman - Illustration",
-      "category": "Digital Art",
-      "tools": "Illustrator",
-      "type": "png"
-    },
-    {
-      "image": "poly-art-lionking",
-      "title": "Lion King - Poly Art",
-      "category": "Digital Art",
-      "tools": "Illustrator",
-      "type": "png"
-    },
-    {
-      "image": "poly-art-ronaldo",
-      "title": "Ronaldo - Poly Art",
-      "category": "Digital Art",
-      "tools": "Illustrator",
-      "type": "png"
-    },
-    {
-      "image": "poly-art-steve-jobs",
-      "title": "Steve Jobs - Poly Art",
-      "category": "Digital Art",
-      "tools": "Illustrator",
-      "type": "png"
-    },
-    {
-      "image": "poly-art-kohli",
-      "title": "Kohli - Poly Art",
-      "category": "Digital Art",
-      "tools": "Illustrator, Inkscape",
-      "type": "png"
-    },
+    
     {
       "image": "charlie-chaplin",
       "title": "Charlie Chaplin",
