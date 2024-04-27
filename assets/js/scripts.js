@@ -182,7 +182,7 @@ $(document).ready(function () {
     $('.switch span').removeClass('active');
     $(this).addClass('active');
     $('body').toggleClass('dark');
-    tl.restart();
+    // tl.restart();
   });
 
   $(window).scroll(function () {
