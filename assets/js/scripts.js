@@ -47,8 +47,6 @@ $(document).ready(function () {
       </div>`);
     });
 
-    
-
     // Lightbox
     var $overlay = $('<div id="overlay"></div>');
     var $image = $('<img class="listItem">');
