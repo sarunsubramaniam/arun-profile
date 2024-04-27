@@ -38,7 +38,7 @@ $(document).ready(function () {
       
       $('#image-gallery .row').append(`<div class="all ${value.category.toLowerCase().replace(" ","-")} image active">
           <div class="img-wrapper">
-          <a href="assets/images/portfolio/${value.image}-min.${value.type}" data-title="${value.title}" data-category="${value.category}" data-tools="${value.tools}"><img class="img-responsive" src="assets/images/portfolio/${value.image}-min.${value.type}" ></a>
+          <a href="assets/images/portfolio/${value.image}.${value.type}" data-title="${value.title}" data-category="${value.category}" data-tools="${value.tools}"><img class="img-responsive" src="assets/images/portfolio/${value.image}.${value.type}" ></a>
           <div class="img-overlay">
             <span>${value.title}</span>
             <h5>${value.category}</h5>
