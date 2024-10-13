@@ -10,14 +10,14 @@
     "image": "appearance",
     "title": "Appearance Toggle",
     "category": "Micro Interactions",
-    "tools":  "Figma",
+    "tools": "Figma",
     "type": "gif"
   },
   {
     "image": "protectt",
     "title": "Protectt.ai",
     "category": "Branding",
-    "tools":  "Illustrator",
+    "tools": "Illustrator",
     "type": "png"
   },
   {
@@ -34,7 +34,13 @@
     "tools": "Illustrator",
     "type": "png"
   },
-
+  {
+    "image": "bumrah-illustration",
+    "title": "Bumrah - Illustration",
+    "category": "Illustrations",
+    "tools": "Illustrator",
+    "type": "jpg"
+  },
   {
     "image": "vintage_car",
     "title": "Vintage Car - Illustration",
@@ -49,8 +55,6 @@
     "tools": "Illustrator",
     "type": "png"
   },
-
-
   {
     "image": "digital-art-nikhil",
     "title": "Kids' Digital Painting",
@@ -59,10 +63,17 @@
     "type": "png"
   },
   {
+    "image": "rajini-illustration",
+    "title": "Rajinikanth - Illustration",
+    "category": "Illustrations",
+    "tools": "Illustrator",
+    "type": "jpg"
+  },
+  {
     "image": "nikolas-rockland",
     "title": "Nikolas Rockland",
     "category": "Branding",
-    "tools":  "Illustrator",
+    "tools": "Illustrator",
     "type": "png"
   },
   {
@@ -72,12 +83,11 @@
     "tools": "2B, 6B Pencil",
     "type": "png"
   },
-
   {
     "image": "process",
     "title": "Software Developement Process",
     "category": "Micro Interactions",
-    "tools":  "Illustrator, Figma",
+    "tools": "Illustrator, Figma",
     "type": "gif"
   },
   {
@@ -88,14 +98,19 @@
     "type": "png"
   },
   {
+    "image": "vijay-illustration",
+    "title": "Vijay - Illustration",
+    "category": "Illustrations",
+    "tools": "Illustrator",
+    "type": "jpg"
+  },
+  {
     "image": "ganesh_2",
     "title": "Ganesh - Illustration",
     "category": "Illustrations",
     "tools": "Illustrator",
     "type": "png"
   },
-
-
   {
     "image": "maanadu",
     "title": "Maanadu - Illustration",
@@ -103,9 +118,6 @@
     "tools": "Illustrator",
     "type": "png"
   },
-
-
-
   {
     "image": "poly-art-steve-jobs",
     "title": "Steve Jobs - Poly Art",
@@ -113,7 +125,6 @@
     "tools": "Illustrator",
     "type": "png"
   },
-
   {
     "image": "vijay",
     "title": "Vijay",
@@ -132,22 +143,9 @@
     "image": "hamburger",
     "title": "Hamburger",
     "category": "Micro Interactions",
-    "tools":  "Figma",
+    "tools": "Figma",
     "type": "gif"
   },
-
-
-
-
-
-
-
-
-
-
-
-     
-
   {
     "image": "arithmetic-lab",
     "title": "Arithmetic Lab",
@@ -159,7 +157,7 @@
     "image": "icons",
     "title": "Icons",
     "category": "Micro Interactions",
-    "tools":  "Illustrator, Figma",
+    "tools": "Illustrator, Figma",
     "type": "gif"
   },
   {
@@ -183,8 +181,6 @@
     "tools": "Photoshop, Wacom Tablet",
     "type": "png"
   },
-
-
   {
     "image": "manjummel_boys",
     "title": "Manjummel Boys - Illustration",
@@ -206,7 +202,6 @@
     "tools": "Illustrator",
     "type": "png"
   },
-  
   {
     "image": "poly-art-kohli",
     "title": "Kohli - Poly Art",
@@ -218,22 +213,9 @@
     "image": "posh-dentistry",
     "title": "Posh Dentistry",
     "category": "Branding",
-    "tools":  "Illustrator",
+    "tools": "Illustrator",
     "type": "png"
   },
-  
-
-
-
-   
-   
-
-
-
- 
- 
-  
-
   {
     "image": "rahman",
     "title": "AR Rahman",
@@ -241,140 +223,137 @@
     "tools": "Vectornator",
     "type": "png"
   },
-
-    {
-      "image": "meerea",
-      "title": "Meerea",
-      "category": "Branding",
-      "tools": "Illustrator",
-      "type": "png"
-    },
-    {
-      "image": "kid-1",
-      "title": "Kids' Portrait",
-      "category": "Sketch",
-      "tools": "2B, 4B Pencil",
-      "type": "png"
-    },
-
-  
-    {
-      "image": "Ganesh",
-      "title": "Ganesh",
-      "category": "Digital Art",
-      "tools": "Procreate, Apple Pencil",
-      "type": "png"
-    },
-    {
-      "image": "charlie-chaplin",
-      "title": "Charlie Chaplin",
-      "category": "Sketch",
-      "tools": "2B, 8B Pencil",
-      "type": "png"
-    },
-    {
-      "image": "buddha",
-      "title": "Buddha",
-      "category": "Digital Art",
-      "tools": "Procreate, Apple Pencil",
-      "type": "png"
-    },
-
-
- 
-    {
-      "image": "sketch-steve-jobs",
-      "title": "Steve Jobs",
-      "category": "Sketch",
-      "tools": "2B, 8B Pencil",
-      "type": "png"
-    },
-    {
-      "image": "sot",
-      "title": "Seasons of Tokyo",
-      "category": "Branding",
-      "tools": "Illustrator",
-      "type": "png"
-    },
-    {
-      "image": "digital-art-kingfisher",
-      "title": "Kingfisher",
-      "category": "Digital Art",
-      "tools": "Infinite Painter, S Pen",
-      "type": "png"
-    },
-    {
-      "image": "daveys",
-      "title": "Daveys",
-      "category": "Branding",
-      "tools": "Illustrator",
-      "type": "png"
-    },
-    {
-      "image": "scribble-art-dhanush",
-      "title": "Dhanush",
-      "category": "Digital Art",
-      "tools": "Procreate, Digital Stylus",
-      "type": "png"
-    },
-    {
-      "image": "nikhilesh",
-      "title": "Kids' Portrait",
-      "category": "Sketch",
-      "tools": "2B, 4B Pencil",
-      "type": "png"
-    },
-    {
-      "image": "eskape",
-      "title": "Eskape Realty",
-      "category": "Branding",
-      "tools": "Illustrator",
-      "type": "png"
-    },
-
- 
-    {
-      "image": "rajinikanth",
-      "title": "Rajinikanth",
-      "category": "Sketch",
-      "tools": "2B, 4B Pencil",
-      "type": "png"
-    },
-    {
-      "image": "mark-sladky",
-      "title": "Mark Sladky",
-      "category": "Branding",
-      "tools": "Illustrator",
-      "type": "png"
-    },
- 
-    {
-      "image": "digital-art-landscape",
-      "title": "Landscape",
-      "category": "Digital Art",
-      "tools": "Infinite Painter, S Pen",
-      "type": "png"
-    },
-    {
-      "image": "kohli",
-      "title": "Virat Kohli",
-      "category": "Sketch",
-      "tools": "2B, 8B Pencil",
-      "type": "png"
-    },
-    {
-      "image": "saypeace-01",
-      "title": "Say Peace",
-      "category": "Branding",
-      "tools": "Illustrator",
-      "type": "png"
-    },
-    {
-      "image": "macoo",
-      "title": "Macoo Beauty",
-      "category": "Branding",
-      "tools": "Illustrator",
-      "type": "png"
-    }
-    
-  ]
+  {
+    "image": "meerea",
+    "title": "Meerea",
+    "category": "Branding",
+    "tools": "Illustrator",
+    "type": "png"
+  },
+  {
+    "image": "kid-1",
+    "title": "Kids' Portrait",
+    "category": "Sketch",
+    "tools": "2B, 4B Pencil",
+    "type": "png"
+  },
+  {
+    "image": "Ganesh",
+    "title": "Ganesh",
+    "category": "Digital Art",
+    "tools": "Procreate, Apple Pencil",
+    "type": "png"
+  },
+  {
+    "image": "charlie-chaplin",
+    "title": "Charlie Chaplin",
+    "category": "Sketch",
+    "tools": "2B, 8B Pencil",
+    "type": "png"
+  },
+  {
+    "image": "buddha",
+    "title": "Buddha",
+    "category": "Digital Art",
+    "tools": "Procreate, Apple Pencil",
+    "type": "png"
+  },
+  {
+    "image": "sketch-steve-jobs",
+    "title": "Steve Jobs",
+    "category": "Sketch",
+    "tools": "2B, 8B Pencil",
+    "type": "png"
+  },
+  {
+    "image": "sot",
+    "title": "Seasons of Tokyo",
+    "category": "Branding",
+    "tools": "Illustrator",
+    "type": "png"
+  },
+  {
+    "image": "digital-art-kingfisher",
+    "title": "Kingfisher",
+    "category": "Digital Art",
+    "tools": "Infinite Painter, S Pen",
+    "type": "png"
+  },
+  {
+    "image": "daveys",
+    "title": "Daveys",
+    "category": "Branding",
+    "tools": "Illustrator",
+    "type": "png"
+  },
+  {
+    "image": "scribble-art-dhanush",
+    "title": "Dhanush",
+    "category": "Digital Art",
+    "tools": "Procreate, Digital Stylus",
+    "type": "png"
+  },
+  {
+    "image": "nikhilesh",
+    "title": "Kids' Portrait",
+    "category": "Sketch",
+    "tools": "2B, 4B Pencil",
+    "type": "png"
+  },
+  {
+    "image": "eskape",
+    "title": "Eskape Realty",
+    "category": "Branding",
+    "tools": "Illustrator",
+    "type": "png"
+  },
+  {
+    "image": "rajinikanth",
+    "title": "Rajinikanth",
+    "category": "Sketch",
+    "tools": "2B, 4B Pencil",
+    "type": "png"
+  },
+  {
+    "image": "mark-sladky",
+    "title": "Mark Sladky",
+    "category": "Branding",
+    "tools": "Illustrator",
+    "type": "png"
+  },
+  {
+    "image": "digital-art-landscape",
+    "title": "Landscape",
+    "category": "Digital Art",
+    "tools": "Infinite Painter, S Pen",
+    "type": "png"
+  },
+  {
+    "image": "kohli",
+    "title": "Virat Kohli",
+    "category": "Sketch",
+    "tools": "2B, 8B Pencil",
+    "type": "png"
+  },
+  {
+    "image": "saypeace-01",
+    "title": "Say Peace",
+    "category": "Branding",
+    "tools": "Illustrator",
+    "type": "png"
+  },
+  {
+    "image": "rishanth",
+    "title": "Kids' Sketch",
+    "category": "Sketch",
+    "tools": "2B, 8B Pencil",
+    "type": "png"
+  },
+  {
+    "image": "macoo",
+    "title": "Macoo Beauty",
+    "category": "Branding",
+    "tools": "Illustrator",
+    "type": "png"
+  }
+]
